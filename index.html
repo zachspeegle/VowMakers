@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vow Makers | Smoky Mountain Weddings</title>
+    <style>
+        :root {
+            --navy: #0A2540;
+            --gold: #D4AF37;
+            --green: #1E3A2F;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .hero {
+            height: 100vh;
+            min-height: 650px;
+            background: linear-gradient(rgba(10,37,64,0.65), rgba(10,37,64,0.75)),
+                        url('https://github.com/zachspeegle/Images/raw/main/IMG_1251.jpeg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero-content {
+            max-width: 900px;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+        }
+        .hero p {
+            font-size: 1.35rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            margin: 10px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: var(--gold);
+            color: var(--navy);
+            font-weight: bold;
+        }
+        .btn-primary:hover { background: #e5c15a; transform: translateY(-3px); }
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .btn-secondary:hover { background: white; color: var(--navy); }
+
+        .trust-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #f8f5f0;
+            padding: 40px 20px;
+            gap: 40px;
+            text-align: center;
+        }
+        .trust-item {
+            max-width: 280px;
+        }
+        .trust-item h3 {
+            font-size: 1.4rem;
+            margin: 12px 0 8px;
+            color: var(--navy);
+        }
+
+        .intro {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .intro h2 {
+            font-size: 2.4rem;
+            color: var(--navy);
+            margin-bottom: 24px;
+        }
+
+        .services {
+            background: #f8f5f0;
+            padding: 80px 20px;
+        }
+        .services-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .service-card h3 {
+            color: var(--navy);
+            margin: 16px 0 12px;
+        }
+
+        .cta {
+            background: var(--navy);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+        .cta h2 {
+            font-size: 2.6rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #1E3A2F;
+            color: #ddd;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.95rem;
+        }
+        .nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            z-index: 10;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Your Dream Wedding,<br>in the Heart of the Smoky Mountains</h1>
+            <p>From “I do” to the last dance — we handle every detail so you can simply be present.</p>
+            <p><strong>Officiant • DJ • Coordination • Florals • Tailoring • Custom Crafts</strong></p>
+            
+            <div>
+                <a href="#contact" class="btn btn-primary">Book a Free Consultation</a>
+                <a href="services.html" class="btn btn-secondary">View Our Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="trust-item">
+            <h2>⚓</h2>
+            <h3>Ordained Navy Chaplain</h3>
+            <p>Decades of service. A ceremony rooted in genuine faith and care.</p>
+        </div>
+        <div class="trust-item">
+            <h2>💍</h2>
+            <h3>Married 27+ Years</h3>
+            <p>We don’t just celebrate marriage. We live it every day.</p>
+        </div>
+        <div class="trust-item">
+            <h2>★</h2>
+            <h3>One Team. Every Detail.</h3>
+            <p>Officiant, DJ, planner, florist, tailor — all under one roof.</p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+        <h2>The Smoky Mountains Are Calling.<br>Let’s Make It Unforgettable.</h2>
+        <p>Vow Makers is a husband and wife team based right here in Sevierville, Tennessee. Together, we offer everything a couple needs for their perfect Smoky Mountain wedding — from a heartfelt ceremony officiated by a retired Navy chaplain, to custom floral arrangements, professional DJ services, full wedding coordination, garment tailoring, and one-of-a-kind handcrafted wood keepsakes.</p>
+        <p>With over 27 years of marriage between us, we understand that your wedding day isn’t just an event — it’s a beginning. No juggling a dozen different vendors. Just one trusted team, fully invested in your day from start to finish.</p>
+    </section>
+
+    <!-- SERVICES SNAPSHOT -->
+    <section class="services">
+        <div style="max-width:1100px; margin:0 auto; text-align:center; margin-bottom:50px;">
+            <h2 style="color:var(--navy); font-size:2.4rem;">Everything You Need.<br>One Husband & Wife Team.</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Officiant Ceremonies</h3>
+                <p>Traditional, Christian, civil, non-denominational, and vow renewals — led by a retired Navy chaplain.</p>
+            </div>
+            <div class="service-card">
+                <h3>DJ & Sound Services</h3>
+                <p>Professional music and sound curated by an accomplished musician from first note to final dance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Full Wedding Coordination</h3>
+                <p>Every detail, timeline, and vendor handled so you can be fully present.</p>
+            </div>
+            <div class="service-card">
+                <h3>Floral Arrangements</h3>
+                <p>Custom bouquets, centerpieces, and ceremony pieces designed with an artist’s eye.</p>
+            </div>
+            <div class="service-card">
+                <h3>Garment Tailoring</h3>
+                <p>Expert bridal and formalwear alterations — your dress will fit perfectly.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Wood Keepsakes</h3>
+                <p>Handcrafted last name signs and heirloom pieces made with care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="cta" id="contact">
+        <h2>Your Date Is Waiting.<br>Let’s Start Planning.</h2>
+        <p style="font-size:1.3rem; max-width:700px; margin:0 auto 30px;">
+            Reach out today for a free consultation and let’s talk about your vision for your perfect Smoky Mountain wedding.
+        </p>
+        <a href="mailto:Bridgett@vowmakers.com" class="btn btn-primary" style="font-size:1.25rem; padding:16px 40px;">Book Your Free Consultation</a>
+        <p style="margin-top:40px; opacity:0.9;">
+            Serving Sevierville • Gatlinburg • Pigeon Forge • and the greater Smoky Mountain region
+        </p>
+    </section>
+
+    <footer>
+        <p><strong>Vow Makers</strong> — Sevierville, Tennessee</p>
+        <p>© 2026 Vow Makers • <a href="https://vowmakers.com" style="color:#ddd;">vowmakers.com</a></p>
+    </footer>
+
+</body>
+</html>
