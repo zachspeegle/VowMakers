@@ -1,4 +1,4 @@
-User-agent: *
+Agent: *
 Disallow:
 
 Sitemap: https://vowmakers.com/sitemap.xml
