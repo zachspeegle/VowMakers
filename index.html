@@ -500,12 +500,12 @@
     .about::before {
       content: 'About';
       position: absolute;
-      top: 4rem;
-      right: -1.5rem;
+      top: 3rem;
+      right: 3%;
       font-family: var(--script);
-      font-size: clamp(6rem, 14vw, 13rem);
+      font-size: clamp(5rem, 11vw, 10rem);
       color: var(--petal-blush);
-      opacity: 0.28;
+      opacity: 0.32;
       line-height: 1;
       pointer-events: none;
       user-select: none;
@@ -990,7 +990,7 @@
 
         <p class="about__text">
           From our home in the <strong>Smoky Mountains of Sevier County, Tennessee</strong>, we've
-          built something we're genuinely proud of — an experienced wedding team that handles your
+          built something we're genuinely proud of — a full-service wedding team that handles your
           music, florals, ceremony, and every detail in between. You get the breathtaking backdrop
           of East Tennessee and the peace of mind that comes from working with people who truly care.
         </p>
@@ -1151,11 +1151,18 @@
         el.classList.add('visible');
         io.unobserve(el);
       });
-    }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.05 });
 
     document.querySelectorAll(
       '.service-card, .about__image-wrap, .about__copy, .reveal'
     ).forEach(el => io.observe(el));
+
+    /* ─── Fallback: guarantee about section is visible even if observer misses ─── */
+    setTimeout(() => {
+      document.querySelectorAll('.about__image-wrap, .about__copy').forEach(el => {
+        el.classList.add('visible');
+      });
+    }, 600);
   </script>
 
 </body>
