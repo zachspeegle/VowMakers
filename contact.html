@@ -6,11 +6,16 @@
   <title>Book a Consultation | Vow Makers — Smoky Mountain Weddings</title>
   <meta name="description" content="Book a free wedding consultation with Vow Makers in Sevier County, Tennessee. Officiant, DJ, florals, and planning — one team, one conversation." />
 
+  <meta name="keywords" content="book Smoky Mountain wedding, Sevier County wedding consultation, Gatlinburg wedding booking, contact Vow Makers, Tennessee wedding inquiry" />
+  <link rel="canonical" href="https://www.vowmakers.com/contact.html" />
+
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:title"       content="Book a Consultation | Vow Makers — Smoky Mountain Weddings" />
   <meta property="og:description" content="Book a free wedding consultation with Vow Makers in Sevier County, Tennessee. Officiant, DJ, florals, and planning — one team, one conversation." />
+  <meta property="og:url"         content="https://www.vowmakers.com/contact.html" />
   <meta property="og:locale"      content="en_US" />
+  <meta property="og:site_name"   content="Vow Makers" />
 
   <!-- Geo targeting -->
   <meta name="geo.region"    content="US-TN" />
@@ -33,7 +38,7 @@
     "@type": "ContactPage",
     "name": "Book a Wedding Consultation — Vow Makers",
     "description": "Free wedding consultation with Vow Makers, a husband-and-wife wedding team in Sevier County, Tennessee.",
-    "url": "",
+    "url": "https://www.vowmakers.com/contact.html",
     "mainEntity": {
       "@type": "LocalBusiness",
       "name": "Vow Makers",
@@ -839,7 +844,8 @@
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="resources.html">Resources</a></li>
-      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
       <li><a href="contact.html" class="nav-cta" aria-current="page">Book a Consultation</a></li>
     </ul>
 
@@ -853,7 +859,8 @@
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="resources.html">Resources</a>
-    <a href="FAQ.html">FAQ</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
     <a href="contact.html">Book a Consultation</a>
   </div>
 
@@ -1102,16 +1109,16 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="resources.html">Resources</a></li>
         </ul>
       </div>
       <div>
         <span class="footer__col-title">Connect</span>
         <ul class="footer__nav" role="list">
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Pinterest</a></li>
+          <li><a href="mailto:bridgett@vowmakers.com">Email Us</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
           <li><a href="contact.html">Book a Consultation</a></li>
         </ul>
       </div>
@@ -1162,8 +1169,7 @@
         }
       });
       if (!valid) {
-        const first = form.querySelector('[required]:not([value])') ||
-                      [...required].find(f => !f.value.trim());
+        const first = [...required].find(f => !f.value.trim());
         if (first) first.focus();
         return;
       }
