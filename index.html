@@ -6,10 +6,65 @@
   <title>Vow Makers | Smoky Mountain Wedding Services</title>
   <meta name="description" content="A husband-and-wife wedding team in the heart of the Smoky Mountains. Officiant, DJ, florals, and planning in Sevier County, Tennessee." />
 
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Vow Makers | Smoky Mountain Wedding Services" />
+  <meta property="og:description" content="A husband-and-wife wedding team in the heart of the Smoky Mountains. Officiant, DJ, florals, and planning in Sevier County, Tennessee." />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- Geo targeting -->
+  <meta name="geo.region"    content="US-TN" />
+  <meta name="geo.placename" content="Sevier County, Tennessee" />
+  <meta name="ICBM"          content="35.8682, -83.5615" />
+  <meta name="geo.position"  content="35.8682;-83.5615" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Vow Makers",
+    "description": "A husband-and-wife wedding team offering officiant ceremonies, DJ and music, floral design, and full wedding planning in Sevier County, Tennessee.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sevier County",
+      "addressRegion": "TN",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.8682,
+      "longitude": -83.5615
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Great Smoky Mountains, Sevier County, Tennessee"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Wedding Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding Officiant"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding DJ & Music"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding Floral Design"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wedding Planning & Coordination"}}
+      ]
+    },
+    "founder": [
+      {"@type": "Person", "name": "Zach", "jobTitle": "Wedding Officiant & DJ"},
+      {"@type": "Person", "name": "Bridgett", "jobTitle": "Floral Designer & Wedding Planner"}
+    ],
+    "keywords": "Smoky Mountain wedding, Sevier County wedding officiant, wedding DJ Gatlinburg, wedding florals Pigeon Forge, wedding planner East Tennessee, Smoky Mountain wedding team"
+  }
+  </script>
 
   <style>
     /* ═══════════════════════════════════════
@@ -883,7 +938,7 @@
 
       <p class="hero__tagline">
         We don't just help with weddings — we help you make promises that last.
-        Wrapped in mountain magic, carried by faith, graced with flowers,
+        Wrapped in mountain magic, carried by music, graced with flowers,
         and held together with genuine love.
       </p>
 
@@ -971,7 +1026,7 @@
 
       <!-- Copy column -->
       <div class="about__copy" id="about-copy">
-        <p class="about__eyebrow">Rooted in Love &nbsp;·&nbsp; Raised in the mountains</p>
+        <p class="about__eyebrow">Rooted in Love &nbsp;·&nbsp; Raised in the Smokies</p>
 
         <h2 class="about__headline" id="about-headline">
           We've Been Where<br><em>You're Standing.</em>
@@ -1071,7 +1126,7 @@
 
   <!-- ═══════════════════════════════════════
        SCRIPTS
-  ═══════════════════════════════════════ */
+  ═══════════════════════════════════════ -->
   <script>
     /* ─── Nav scroll state ─── */
     const mainNav = document.getElementById('main-nav');
