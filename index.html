@@ -523,11 +523,10 @@
     /* Image column */
     .about__image-wrap {
       position: relative;
-      opacity: 0;
       transform: translateX(-30px);
-      transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+      transition: transform 0.9s var(--ease);
     }
-    .about__image-wrap.visible { opacity: 1; transform: translateX(0); }
+    .about__image-wrap.visible { transform: translateX(0); }
 
     .about__frame {
       position: relative;
@@ -575,11 +574,10 @@
 
     /* Copy column */
     .about__copy {
-      opacity: 0;
       transform: translateX(30px);
-      transition: opacity 0.9s var(--ease) 0.15s, transform 0.9s var(--ease) 0.15s;
+      transition: transform 0.9s var(--ease) 0.15s;
     }
-    .about__copy.visible { opacity: 1; transform: translateX(0); }
+    .about__copy.visible { transform: translateX(0); }
 
     .about__eyebrow {
       font-family: var(--sans);
