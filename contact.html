@@ -1,187 +1,1204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Vow Makers for your Smoky Mountain wedding. Reach out to Bridgett@Vowmakers.com or use our form to book a free consultation. Sevierville, Gatlinburg, Pigeon Forge.">
-    <title>Contact Us | Vow Makers - Smoky Mountain Weddings</title>
-    <style>
-        :root {
-            --navy: #0A2540;
-            --gold: #D4AF37;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: var(--navy);
-            color: white;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-        }
-        .nav a:hover { color: var(--gold); }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Consultation | Vow Makers — Smoky Mountain Weddings</title>
+  <meta name="description" content="Book a free wedding consultation with Vow Makers in Sevier County, Tennessee. Officiant, DJ, florals, and planning — one team, one conversation." />
 
-        .hero-small {
-            height: 40vh;
-            min-height: 300px;
-            background: linear-gradient(rgba(10,37,64,0.7), rgba(10,37,64,0.8)),
-                        url('https://github.com/zachspeegle/Images/raw/main/IMG_1251.jpeg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-        .hero-small h1 {
-            font-size: 2.8rem;
-        }
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Book a Consultation | Vow Makers — Smoky Mountain Weddings" />
+  <meta property="og:description" content="Book a free wedding consultation with Vow Makers in Sevier County, Tennessee. Officiant, DJ, florals, and planning — one team, one conversation." />
+  <meta property="og:locale"      content="en_US" />
 
-        .content {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .contact-info h2 {
-            color: var(--navy);
-            margin-bottom: 20px;
-        }
-        .email {
-            font-size: 1.5rem;
-            color: var(--navy);
-            margin: 15px 0;
-        }
+  <!-- Geo targeting -->
+  <meta name="geo.region"    content="US-TN" />
+  <meta name="geo.placename" content="Sevier County, Tennessee" />
+  <meta name="ICBM"          content="35.8682, -83.5615" />
+  <meta name="geo.position"  content="35.8682;-83.5615" />
 
-        .form-container {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-        }
-        form label {
-            display: block;
-            margin: 20px 0 8px;
-            font-weight: 500;
-            color: var(--navy);
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        form textarea {
-            height: 160px;
-            resize: vertical;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 40px;
-            background: var(--gold);
-            color: var(--navy);
-            text-decoration: none;
-            border: none;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-        }
-        .btn:hover {
-            background: #e5c15a;
-        }
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
 
-        /* Navy Footer */
-        footer {
-            background: var(--navy);
-            color: #ddd;
-            text-align: center;
-            padding: 40px 20px;
-        }
-    </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Book a Wedding Consultation — Vow Makers",
+    "description": "Free wedding consultation with Vow Makers, a husband-and-wife wedding team in Sevier County, Tennessee.",
+    "url": "",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "Vow Makers",
+      "email": "bridgett@vowmakers.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sevier County",
+        "addressRegion": "TN",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.8682,
+        "longitude": -83.5615
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════
+       BRAND TOKENS
+    ═══════════════════════════════════════ */
+    :root {
+      --petal-blush:    #EFD6D2;
+      --dusty-mauve:    #B79AA3;
+      --warm-champagne: #D8C2A6;
+      --soft-ivory:     #FAF6F1;
+      --cocoa-taupe:    #6B5B57;
+      --deep-espresso:  #4B3F3C;
+      --veil-white:     #FFFFFF;
+      --pale-linen:     #F3ECE6;
+
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --script: 'Great Vibes', cursive;
+      --sans:   'Lato', sans-serif;
+
+      --nav-h: 76px;
+      --ease:  cubic-bezier(0.4, 0, 0.2, 1);
+      --max:   1100px;
+    }
+
+    /* ═══════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--soft-ivory);
+      color: var(--cocoa-taupe);
+      font-family: var(--sans);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ═══════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 900;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      background: rgba(250, 246, 241, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 24px rgba(75, 63, 60, 0.09);
+    }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1; gap: 1px; }
+    .nav-logo-script {
+      font-family: var(--script);
+      font-size: 2rem;
+      color: var(--cocoa-taupe);
+      letter-spacing: 0.01em;
+    }
+    .nav-logo-tagline {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--dusty-mauve);
+      transition: width 0.35s ease;
+    }
+    .nav-links a:hover { color: var(--deep-espresso); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a.active { color: var(--dusty-mauve); }
+    .nav-links a.active::after { width: 100%; }
+
+    .nav-cta {
+      display: inline-block;
+      padding: 0.55rem 1.5rem;
+      border: 1px solid var(--dusty-mauve);
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve) !important;
+      border-radius: 1px;
+      background: rgba(183, 154, 163, 0.08);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .nav-cta:hover { background: var(--dusty-mauve); color: #fff !important; }
+    .nav-cta::after { display: none !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 1.5px;
+      background: var(--cocoa-taupe);
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      background: rgba(250, 246, 241, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--petal-blush);
+      padding: 1.8rem 6%;
+      z-index: 850;
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav-drawer.open { display: flex; }
+    .nav-drawer a {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--pale-linen);
+      transition: color 0.25s ease;
+    }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer a:hover { color: var(--dusty-mauve); }
+
+    /* ═══════════════════════════════════════
+       PAGE HERO
+    ═══════════════════════════════════════ */
+    .page-hero {
+      position: relative;
+      min-height: 52vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: var(--nav-h);
+    }
+    .page-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(
+          155deg,
+          rgba(75, 63, 60, 0.88) 0%,
+          rgba(107, 91, 87, 0.55) 50%,
+          rgba(183, 154, 163, 0.38) 75%,
+          rgba(75, 63, 60, 0.84) 100%
+        ),
+        radial-gradient(ellipse at 55% 45%, #8a6f6a 0%, #4B3F3C 55%, #2d2220 100%);
+      background-size: cover;
+      background-position: center;
+    }
+    .page-hero__botanical {
+      position: absolute; inset: 0; z-index: 1;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23EFD6D2' stroke-width='0.8'%3E%3Cellipse cx='260' cy='260' rx='220' ry='100'/%3E%3Cellipse cx='260' cy='260' rx='100' ry='220'/%3E%3Cellipse cx='260' cy='260' rx='170' ry='170'/%3E%3Cpath d='M260,40 C290,110 290,200 260,260 C230,200 230,110 260,40Z'/%3E%3Cpath d='M260,480 C290,410 290,320 260,260 C230,320 230,410 260,480Z'/%3E%3Cpath d='M40,260 C110,290 200,290 260,260 C200,230 110,230 40,260Z'/%3E%3Cpath d='M480,260 C410,290 320,290 260,260 C320,230 410,230 480,260Z'/%3E%3Ccircle cx='260' cy='260' r='12'/%3E%3Ccircle cx='260' cy='260' r='45'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 340px;
+      pointer-events: none;
+    }
+    .page-hero__vignette {
+      position: absolute; inset: 0; z-index: 2;
+      background: radial-gradient(ellipse at 50% 45%, transparent 30%, rgba(30, 22, 20, 0.52) 100%);
+      pointer-events: none;
+    }
+    .page-hero__line {
+      position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
+      height: 2px;
+      background: linear-gradient(to right, transparent 0%, var(--warm-champagne) 30%, var(--petal-blush) 70%, transparent 100%);
+      opacity: 0.5;
+    }
+    .page-hero__content {
+      position: relative; z-index: 4;
+      text-align: center;
+      padding: 2rem 24px 3rem;
+      max-width: 740px; width: 100%;
+    }
+    .page-hero__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.66rem; font-weight: 300;
+      letter-spacing: 0.4em; text-transform: uppercase;
+      color: var(--warm-champagne);
+      margin-bottom: 1.4rem;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.2s forwards;
+    }
+    .page-hero__script {
+      font-family: var(--script);
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      color: var(--veil-white);
+      line-height: 1; margin-bottom: 1rem;
+      text-shadow: 0 4px 40px rgba(75, 63, 60, 0.4);
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.45s forwards;
+    }
+    .page-hero__divider {
+      width: 54px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne), transparent);
+      margin: 0 auto 1.4rem;
+      opacity: 0; animation: fadeIn 0.9s var(--ease) 0.7s forwards;
+    }
+    .page-hero__sub {
+      font-family: var(--serif);
+      font-style: italic; font-weight: 300;
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      color: rgba(250, 246, 241, 0.78);
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.85s forwards;
+      line-height: 1.65;
+    }
+
+    /* ═══════════════════════════════════════
+       CONTACT SECTION
+    ═══════════════════════════════════════ */
+    .contact {
+      padding: 8rem 5% 7rem;
+      background: var(--soft-ivory);
+      position: relative;
+      overflow: hidden;
+    }
+    .contact::before {
+      content: 'Hello';
+      position: absolute;
+      top: 3rem; right: 3%;
+      font-family: var(--script);
+      font-size: clamp(5rem, 11vw, 10rem);
+      color: var(--petal-blush);
+      opacity: 0.3;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .contact__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.45fr;
+      gap: 7rem;
+      align-items: start;
+    }
+
+    /* ─── Left: info column ─── */
+    .contact__info {
+      position: sticky;
+      top: calc(var(--nav-h) + 3rem);
+    }
+
+    .contact__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 0.9rem;
+    }
+    .contact__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      color: var(--deep-espresso);
+      line-height: 1.18;
+      margin-bottom: 0.3rem;
+    }
+    .contact__headline em { font-style: italic; color: var(--dusty-mauve); }
+
+    .contact__script-bridge {
+      font-family: var(--script);
+      font-size: 1.7rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+    .contact__divider {
+      width: 52px; height: 1px;
+      background: var(--warm-champagne);
+      margin-bottom: 2.2rem;
+    }
+    .contact__body {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.95;
+      margin-bottom: 1.4rem;
+    }
+    .contact__body strong { font-weight: 700; color: var(--deep-espresso); }
+
+    /* Contact details card */
+    .contact__details {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .contact__detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .contact__detail-icon {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: var(--petal-blush);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .contact__detail-icon svg {
+      width: 16px; height: 16px;
+      stroke: var(--cocoa-taupe);
+      fill: none;
+      stroke-width: 1.5;
+    }
+    .contact__detail-label {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .contact__detail-value {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--deep-espresso);
+    }
+    .contact__detail-value a {
+      color: var(--deep-espresso);
+      transition: color 0.3s ease;
+    }
+    .contact__detail-value a:hover { color: var(--dusty-mauve); }
+
+    /* Promise note */
+    .contact__promise {
+      margin-top: 2.5rem;
+      padding: 1.8rem 2rem;
+      background: var(--pale-linen);
+      border-left: 2px solid var(--warm-champagne);
+    }
+    .contact__promise p {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--deep-espresso);
+      line-height: 1.7;
+    }
+    .contact__promise cite {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      font-style: normal;
+      display: block;
+      margin-top: 0.7rem;
+    }
+
+    /* ─── Right: form column ─── */
+    .contact__form-wrap {
+      background: var(--veil-white);
+      padding: 3.5rem;
+      box-shadow: 0 8px 48px rgba(75, 63, 60, 0.07);
+    }
+
+    .form-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--pale-linen);
+    }
+    .form-header__script {
+      font-family: var(--script);
+      font-size: 2rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .form-header__title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: var(--deep-espresso);
+      line-height: 1.2;
+    }
+
+    /* Form grid & fields */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 2rem;
+    }
+    .form-grid--full { grid-column: 1 / -1; }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .field label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+    }
+    .field label .req {
+      color: var(--dusty-mauve);
+      margin-left: 2px;
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--deep-espresso);
+      background: var(--soft-ivory);
+      border: 1px solid var(--pale-linen);
+      border-radius: 1px;
+      padding: 0.75rem 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+      width: 100%;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .field input::placeholder,
+    .field textarea::placeholder { color: rgba(107, 91, 87, 0.35); }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--dusty-mauve);
+      box-shadow: 0 0 0 3px rgba(183, 154, 163, 0.15);
+    }
+    .field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B79AA3' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+    .field textarea {
+      resize: vertical;
+      min-height: 120px;
+      line-height: 1.7;
+    }
+
+    /* Services checkboxes */
+    .services-check {
+      grid-column: 1 / -1;
+    }
+    .services-check__label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    .services-check__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem 1.5rem;
+    }
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      cursor: pointer;
+    }
+    .check-item input[type="checkbox"] {
+      width: 16px; height: 16px;
+      border: 1px solid var(--warm-champagne);
+      border-radius: 0;
+      background: var(--soft-ivory);
+      cursor: pointer;
+      flex-shrink: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      padding: 0;
+      position: relative;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .check-item input[type="checkbox"]:checked {
+      background: var(--dusty-mauve);
+      border-color: var(--dusty-mauve);
+    }
+    .check-item input[type="checkbox"]:checked::after {
+      content: '';
+      position: absolute;
+      left: 4px; top: 1px;
+      width: 5px; height: 9px;
+      border: 1.5px solid #fff;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+    }
+    .check-item span {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+    }
+
+    /* Submit */
+    .form-footer {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--pale-linen);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .form-footer__note {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: rgba(107, 91, 87, 0.5);
+      max-width: 260px;
+      line-height: 1.6;
+    }
+    .btn--submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      background: var(--deep-espresso);
+      color: var(--soft-ivory);
+      border: 1px solid var(--deep-espresso);
+      padding: 1rem 2.6rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      cursor: pointer;
+      transition: background 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--submit:hover { background: var(--cocoa-taupe); border-color: var(--cocoa-taupe); transform: translateY(-2px); }
+    .btn--submit svg {
+      width: 14px; height: 14px;
+      stroke: currentColor; fill: none; stroke-width: 1.8;
+    }
+
+    /* ─── Thank you state ─── */
+    .form-thankyou {
+      display: none;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .form-thankyou.visible { display: block; }
+    .form-thankyou__icon {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: var(--petal-blush);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.8rem;
+    }
+    .form-thankyou__icon svg {
+      width: 28px; height: 28px;
+      stroke: var(--cocoa-taupe); fill: none; stroke-width: 1.5;
+    }
+    .form-thankyou__script {
+      font-family: var(--script);
+      font-size: 2.6rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-thankyou__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: var(--deep-espresso);
+      margin-bottom: 1rem;
+    }
+    .form-thankyou__text {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.9;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* ═══════════════════════════════════════
+       REASSURANCE STRIP
+    ═══════════════════════════════════════ */
+    .reassurance {
+      background: var(--pale-linen);
+      padding: 5rem 5%;
+      position: relative;
+    }
+    .reassurance::before,
+    .reassurance::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne) 35%, var(--petal-blush) 65%, transparent);
+    }
+    .reassurance::before { top: 0; }
+    .reassurance::after  { bottom: 0; }
+
+    .reassurance__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      text-align: center;
+    }
+    .reassurance-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .reassurance-item__icon {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--veil-white);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(75, 63, 60, 0.08);
+    }
+    .reassurance-item__icon svg {
+      width: 22px; height: 22px;
+      stroke: var(--dusty-mauve); fill: none; stroke-width: 1.4;
+    }
+    .reassurance-item__title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: var(--deep-espresso);
+    }
+    .reassurance-item__text {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.8;
+    }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ */
+    footer { background: var(--deep-espresso); padding: 5rem 5% 2.5rem; }
+    .footer__grid {
+      max-width: var(--max); margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem; padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer__brand-script {
+      font-family: var(--script); font-size: 2.6rem;
+      color: var(--warm-champagne); line-height: 1;
+      display: block; margin-bottom: 0.25rem;
+    }
+    .footer__brand-tag {
+      font-family: var(--sans); font-size: 0.58rem;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: rgba(216, 194, 166, 0.5); display: block; margin-bottom: 1.4rem;
+    }
+    .footer__brand-text {
+      font-family: var(--sans); font-size: 0.83rem;
+      font-weight: 300; line-height: 1.8;
+      color: rgba(250, 246, 241, 0.55); max-width: 280px;
+    }
+    .footer__col-title {
+      font-family: var(--sans); font-size: 0.6rem;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: var(--warm-champagne); display: block; margin-bottom: 1.5rem;
+    }
+    .footer__nav { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+    .footer__nav a {
+      font-family: var(--sans); font-size: 0.83rem;
+      font-weight: 300; color: rgba(250, 246, 241, 0.5);
+      transition: color 0.3s ease;
+    }
+    .footer__nav a:hover { color: var(--warm-champagne); }
+    .footer__bottom {
+      max-width: var(--max); margin: 2.5rem auto 0;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 0.8rem;
+    }
+    .footer__copy { font-family: var(--sans); font-size: 0.72rem; color: rgba(250, 246, 241, 0.28); }
+    .footer__hearts { font-family: var(--script); font-size: 1.3rem; color: var(--petal-blush); opacity: 0.45; }
+
+    /* ═══════════════════════════════════════
+       KEYFRAMES & REVEAL
+    ═══════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 960px) {
+      .contact__inner { grid-template-columns: 1fr; gap: 4rem; }
+      .contact__info { position: static; }
+      .reassurance__inner { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+      .footer__grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+      .footer__brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .contact__form-wrap { padding: 2rem 1.5rem; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-grid--full { grid-column: 1; }
+      .services-check { grid-column: 1; }
+      .services-check__grid { grid-template-columns: 1fr; }
+      .form-footer { flex-direction: column; align-items: flex-start; }
+      .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav">
-            <div><strong>Vow Makers</strong></div>
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Vow Makers home">
+      <span class="nav-logo-script">Vow Makers</span>
+      <span class="nav-logo-tagline">Smoky Mountain Weddings</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html" class="nav-cta" aria-current="page">Book a Consultation</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="resources.html">Resources</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="contact.html">Book a Consultation</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════════════ -->
+  <header class="page-hero" aria-label="Contact page header">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__botanical" aria-hidden="true"></div>
+    <div class="page-hero__vignette" aria-hidden="true"></div>
+    <div class="page-hero__line" aria-hidden="true"></div>
+
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Free Consultation &nbsp;·&nbsp; No Pressure, Just a Conversation</p>
+      <h1 class="page-hero__script">Let's Talk</h1>
+      <div class="page-hero__divider" aria-hidden="true"></div>
+      <p class="page-hero__sub">Tell us about your wedding day and we'll reach out within 24 hours to set up a time to connect.</p>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════ -->
+  <section class="contact" id="contact" aria-labelledby="contact-headline">
+    <div class="contact__inner">
+
+      <!-- Left: info -->
+      <div class="contact__info reveal">
+        <span class="contact__eyebrow">Get in Touch</span>
+        <h2 class="contact__headline" id="contact-headline">
+          We'd Love to Hear<br><em>Your Story.</em>
+        </h2>
+        <span class="contact__script-bridge">Every great wedding starts with a conversation.</span>
+
+        <div class="contact__divider" aria-hidden="true"></div>
+
+        <p class="contact__body">
+          Fill out the form and we'll be in touch within <strong>24 hours</strong> to schedule your free consultation — no obligation, no pressure. Just two people who genuinely love weddings sitting down to hear about yours.
+        </p>
+        <p class="contact__body">
+          Whether you need one service or all four, we'll talk through exactly what you're envisioning and how Vow Makers can be part of making it real.
+        </p>
+
+        <div class="contact__details">
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <!-- Mail icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <div>
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
+              <span class="contact__detail-label">Email Us</span>
+              <p class="contact__detail-value">
+                <a href="mailto:bridgett@vowmakers.com">bridgett@vowmakers.com</a>
+              </p>
             </div>
-        </div>
-    </header>
+          </div>
 
-    <!-- Small Hero -->
-    <section class="hero-small">
-        <h1>Contact Us</h1>
-    </section>
-
-    <div class="content">
-
-        <div class="contact-info">
-            <h2>Let’s Plan Your Smoky Mountain Wedding</h2>
-            <p style="font-size:1.2rem;">Reach out today for a free consultation.</p>
-            <div class="email">
-                <strong>Bridgett@Vowmakers.com</strong>
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <!-- Map pin icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
+            <div>
+              <span class="contact__detail-label">Our Home Base</span>
+              <p class="contact__detail-value">Sevier County, Tennessee<br>Great Smoky Mountains</p>
+            </div>
+          </div>
+
+          <div class="contact__detail">
+            <div class="contact__detail-icon">
+              <!-- Clock icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <span class="contact__detail-label">Response Time</span>
+              <p class="contact__detail-value">Within 24 hours</p>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Contact Form -->
-        <div class="form-container">
-            <form action="https://formspree.io/f/xqewenwn" method="POST">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="date">Preferred Wedding Date</label>
-                <input type="date" id="date" name="wedding_date">
-
-                <label for="message">Tell us about your vision</label>
-                <textarea id="message" name="message" placeholder="Tell us about your wedding plans, location, or any special requests..." required></textarea>
-
-                <button type="submit" class="btn">Send Message – Book Free Consultation</button>
-            </form>
+        <div class="contact__promise">
+          <p>"We read every message personally. When you reach out, you're hearing back from us — not an assistant, not a bot. Just Zach and Bridgett."</p>
+          <cite>— Zach &amp; Bridgett, Vow Makers</cite>
         </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact__form-wrap reveal" style="transition-delay: 0.15s;">
+
+        <div class="form-header">
+          <span class="form-header__script">Tell us everything</span>
+          <h2 class="form-header__title">Request Your Free Consultation</h2>
+        </div>
+
+        <form id="contact-form" action="https://formspree.io/f/xeevgrop" method="POST" novalidate>
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="your-name">Your Name <span class="req">*</span></label>
+              <input type="text" id="your-name" name="your_name" placeholder="First &amp; last name" required />
+            </div>
+
+            <div class="field">
+              <label for="partner-name">Partner's Name <span class="req">*</span></label>
+              <input type="text" id="partner-name" name="partner_name" placeholder="First &amp; last name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" />
+            </div>
+
+            <div class="field">
+              <label for="wedding-date">Wedding Date <span class="req">*</span></label>
+              <input type="date" id="wedding-date" name="wedding_date" required />
+            </div>
+
+            <div class="field">
+              <label for="guest-count">Estimated Guest Count</label>
+              <select id="guest-count" name="guest_count">
+                <option value="" disabled selected>Select a range</option>
+                <option value="under-25">Intimate — Under 25</option>
+                <option value="25-50">Small — 25 to 50</option>
+                <option value="50-100">Medium — 50 to 100</option>
+                <option value="100-150">Large — 100 to 150</option>
+                <option value="150+">Grand — 150+</option>
+              </select>
+            </div>
+
+            <div class="field form-grid--full">
+              <label for="venue">Venue or Location</label>
+              <input type="text" id="venue" name="venue" placeholder="Venue name or general area (e.g., Gatlinburg, Pigeon Forge)" />
+            </div>
+
+            <div class="services-check">
+              <span class="services-check__label">Services You're Interested In</span>
+              <div class="services-check__grid">
+                <label class="check-item">
+                  <input type="checkbox" name="services[]" value="officiant" />
+                  <span>Officiant</span>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" name="services[]" value="music-dj" />
+                  <span>Music &amp; DJ</span>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" name="services[]" value="florals" />
+                  <span>Florals</span>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" name="services[]" value="planning" />
+                  <span>Planning</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field form-grid--full">
+              <label for="message">Tell Us About Your Wedding</label>
+              <textarea id="message" name="message" placeholder="Share your vision, your vibe, any details that matter to you — we love hearing the whole story."></textarea>
+            </div>
+
+          </div><!-- /.form-grid -->
+
+          <div class="form-footer">
+            <p class="form-footer__note">We'll never share your information. This is just between us.</p>
+            <button type="submit" class="btn--submit">
+              Send My Request
+              <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Thank you state (shown after submit) -->
+        <div class="form-thankyou" id="form-thankyou" aria-live="polite">
+          <div class="form-thankyou__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <span class="form-thankyou__script">Thank you!</span>
+          <h2 class="form-thankyou__headline">We Can't Wait to Hear More.</h2>
+          <p class="form-thankyou__text">Your message is on its way to Zach and Bridgett. Expect to hear back within 24 hours — usually much sooner.</p>
+        </div>
+
+      </div><!-- /.contact__form-wrap -->
 
     </div>
+  </section>
 
-    <footer>
-        <p><strong>Vow Makers</strong> — Sevierville, Tennessee</p>
-        <p>Serving Sevierville • Gatlinburg • Pigeon Forge • and the greater Smoky Mountain region</p>
-        <p>© 2026 Vow Makers</p>
-    </footer>
+
+  <!-- ═══════════════════════════════════════
+       REASSURANCE STRIP
+  ═══════════════════════════════════════ -->
+  <div class="reassurance" aria-label="Why Vow Makers">
+    <div class="reassurance__inner">
+
+      <div class="reassurance-item reveal" style="transition-delay:0s">
+        <div class="reassurance-item__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3 class="reassurance-item__title">One Team, Four Services</h3>
+        <p class="reassurance-item__text">Officiant, DJ, florals, and planning — coordinated by the same two people who care about your day as much as you do.</p>
+      </div>
+
+      <div class="reassurance-item reveal" style="transition-delay:0.12s">
+        <div class="reassurance-item__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="reassurance-item__title">Always Timely</h3>
+        <p class="reassurance-item__text">We respond within 24 hours, keep every timeline, and make sure you never have to chase us down for answers.</p>
+      </div>
+
+      <div class="reassurance-item reveal" style="transition-delay:0.24s">
+        <div class="reassurance-item__icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="3 20 12 4 21 20 3 20"/></svg>
+        </div>
+        <h3 class="reassurance-item__title">Rooted in the Smokies</h3>
+        <p class="reassurance-item__text">We know Sevier County venues, vendors, and roads. We've built relationships here so your day runs without a hitch.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__brand-script">Vow Makers</span>
+        <span class="footer__brand-tag">Smoky Mountain Weddings</span>
+        <p class="footer__brand-text">A husband-and-wife wedding team serving the Smoky Mountain region of East Tennessee. Officiant · Music · Florals · Planning.</p>
+      </div>
+      <div>
+        <span class="footer__col-title">Navigate</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="footer__col-title">Connect</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="contact.html">Book a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Vow Makers &nbsp;·&nbsp; Sevier County, Tennessee &nbsp;·&nbsp; All rights reserved</p>
+      <span class="footer__hearts" aria-hidden="true">&#9825; Made with love &#9825;</span>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script>
+    /* ─── Hamburger / mobile drawer ─── */
+    const hamburger = document.getElementById('hamburger');
+    const navDrawer = document.getElementById('nav-drawer');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navDrawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navDrawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navDrawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ─── Form submit — show thank you state ─── */
+    const form       = document.getElementById('contact-form');
+    const thankYou   = document.getElementById('form-thankyou');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      /* Basic required-field validation */
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(field => {
+        field.style.borderColor = '';
+        if (!field.value.trim()) {
+          field.style.borderColor = '#B79AA3';
+          valid = false;
+        }
+      });
+      if (!valid) {
+        const first = form.querySelector('[required]:not([value])') ||
+                      [...required].find(f => !f.value.trim());
+        if (first) first.focus();
+        return;
+      }
+
+      /* Submit to Formspree, then show thank you state */
+      fetch('https://formspree.io/f/xeevgrop', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(res => {
+        if (res.ok) {
+          form.style.display = 'none';
+          thankYou.classList.add('visible');
+          thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          alert('Something went wrong. Please email us directly at bridgett@vowmakers.com');
+        }
+      })
+      .catch(() => {
+        alert('Something went wrong. Please email us directly at bridgett@vowmakers.com');
+      });
+    });
+
+    /* ─── Scroll reveal ─── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 
 </body>
 </html>
