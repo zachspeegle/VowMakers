@@ -1,302 +1,1217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vow Makers offers full Smoky Mountain weddings in Sevierville, Gatlinburg & Pigeon Forge. Husband & wife team providing officiant, DJ, coordination, florals, tailoring & custom wood crafts. Book your free consultation today.">
-    <meta name="keywords" content="Smoky Mountain wedding, Sevierville wedding, Gatlinburg wedding, Pigeon Forge wedding, Tennessee mountain wedding, Navy chaplain officiant, wedding DJ, wedding florist, bridal alterations">
-    <title>Vow Makers | Smoky Mountain Weddings in Sevierville, Gatlinburg & Pigeon Forge</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vow Makers | Smoky Mountain Wedding Services</title>
+  <meta name="description" content="A husband-and-wife wedding team in the heart of the Smoky Mountains. Officiant, DJ, florals, and planning in Sevier County, Tennessee." />
 
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Vow Makers - Your Dream Smoky Mountain Wedding">
-    <meta property="og:description" content="Husband & wife team handling every detail of your Smoky Mountain wedding. Officiant, DJ, coordination, florals, tailoring & custom crafts.">
-    <meta property="og:image" content="https://github.com/zachspeegle/Images/raw/main/IMG_1251.jpeg">
-    <meta property="og:url" content="https://vowmakers.com/">
-    <meta property="og:type" content="website">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://vowmakers.com/">
+  <style>
+    /* ═══════════════════════════════════════
+       BRAND TOKENS
+    ═══════════════════════════════════════ */
+    :root {
+      --petal-blush:    #EFD6D2;
+      --dusty-mauve:    #B79AA3;
+      --warm-champagne: #D8C2A6;
+      --soft-ivory:     #FAF6F1;
+      --cocoa-taupe:    #6B5B57;
+      --deep-espresso:  #4B3F3C;
+      --veil-white:     #FFFFFF;
+      --pale-linen:     #F3ECE6;
 
-    <!-- LocalBusiness Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Vow Makers",
-      "url": "https://vowmakers.com",
-      "description": "Husband and wife wedding team offering officiant, DJ, coordination, florals, tailoring, and custom crafts for Smoky Mountain weddings in Sevierville, Gatlinburg, and Pigeon Forge, Tennessee.",
-      "image": "https://github.com/zachspeegle/Images/raw/main/IMG_1251.jpeg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Sevierville",
-        "addressRegion": "TN",
-        "addressCountry": "US"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Sevierville" },
-        { "@type": "City", "name": "Gatlinburg" },
-        { "@type": "City", "name": "Pigeon Forge" }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Wedding Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wedding Officiant" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wedding DJ & Sound" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Wedding Coordination" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Floral Arrangements" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bridal & Formalwear Tailoring" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Wood Keepsakes" } }
-        ]
-      }
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --script: 'Great Vibes', cursive;
+      --sans:   'Lato', sans-serif;
+
+      --nav-h: 76px;
+      --ease:  cubic-bezier(0.4, 0, 0.2, 1);
     }
-    </script>
 
-    <style>
-        :root {
-            --navy: #0A2540;
-            --gold: #D4AF37;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        .hero {
-            height: 100vh;
-            min-height: 650px;
-            background: linear-gradient(rgba(10,37,64,0.65), rgba(10,37,64,0.75)),
-                        url('https://github.com/zachspeegle/Images/raw/main/IMG_1251.jpeg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        .hero-content {
-            max-width: 900px;
-            padding: 0 20px;
-        }
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.6);
-        }
-        .hero p {
-            font-size: 1.35rem;
-            margin-bottom: 2rem;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-        }
-        .btn {
-            display: inline-block;
-            padding: 14px 32px;
-            margin: 10px;
-            font-size: 1.1rem;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
-        .btn-primary {
-            background: var(--gold);
-            color: var(--navy);
-            font-weight: bold;
-        }
-        .btn-primary:hover { background: #e5c15a; transform: translateY(-3px); }
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        .btn-secondary:hover { background: white; color: var(--navy); }
+    /* ═══════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .trust-bar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background: #f8f5f0;
-            padding: 40px 20px;
-            gap: 40px;
-            text-align: center;
-        }
-        .trust-item {
-            max-width: 280px;
-        }
-        .trust-item h3 {
-            font-size: 1.4rem;
-            margin: 12px 0 8px;
-            color: var(--navy);
-        }
+    html { scroll-behavior: smooth; font-size: 16px; }
 
-        .intro {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .intro h2 {
-            font-size: 2.4rem;
-            color: var(--navy);
-            margin-bottom: 24px;
-        }
+    body {
+      background: var(--soft-ivory);
+      color: var(--cocoa-taupe);
+      font-family: var(--sans);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
 
-        .services {
-            background: #f8f5f0;
-            padding: 80px 20px;
-        }
-        .services-grid {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .service-card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-        .service-card h3 {
-            color: var(--navy);
-            margin: 16px 0 12px;
-        }
+    a { text-decoration: none; }
+    img { display: block; max-width: 100%; }
 
-        .cta {
-            background: var(--navy);
-            color: white;
-            text-align: center;
-            padding: 90px 20px;
-        }
-        .cta h2 {
-            font-size: 2.6rem;
-            margin-bottom: 20px;
-        }
+    /* ═══════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 900;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      transition: background 0.5s var(--ease), box-shadow 0.5s var(--ease);
+    }
 
-        footer {
-            background: var(--navy);
-            color: #ddd;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.95rem;
-        }
-        .nav {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            z-index: 10;
-        }
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-    </style>
+    .nav.scrolled {
+      background: rgba(250, 246, 241, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 24px rgba(75, 63, 60, 0.09);
+    }
+
+    /* Logo */
+    .nav-logo { display: flex; flex-direction: column; line-height: 1; gap: 1px; }
+
+    .nav-logo-script {
+      font-family: var(--script);
+      font-size: 2rem;
+      color: #fff;
+      transition: color 0.4s var(--ease);
+      letter-spacing: 0.01em;
+    }
+    .nav.scrolled .nav-logo-script { color: var(--cocoa-taupe); }
+
+    .nav-logo-tagline {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      transition: color 0.4s var(--ease);
+    }
+    .nav.scrolled .nav-logo-tagline { color: var(--dusty-mauve); }
+
+    /* Links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.88);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--warm-champagne);
+      transition: width 0.35s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav.scrolled .nav-links a { color: var(--cocoa-taupe); }
+    .nav.scrolled .nav-links a::after { background: var(--dusty-mauve); }
+
+    /* CTA button in nav */
+    .nav-cta {
+      display: inline-block;
+      padding: 0.55rem 1.5rem;
+      border: 1px solid rgba(255,255,255,0.5);
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fff !important;
+      border-radius: 1px;
+      transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+    }
+    .nav-cta:hover,
+    .nav-cta:focus { background: #fff; color: var(--cocoa-taupe) !important; border-color: #fff; }
+    .nav-cta::after { display: none !important; }
+
+    .nav.scrolled .nav-cta {
+      border-color: var(--cocoa-taupe);
+      color: var(--cocoa-taupe) !important;
+    }
+    .nav.scrolled .nav-cta:hover {
+      background: var(--cocoa-taupe);
+      color: var(--soft-ivory) !important;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: #fff;
+      transition: background 0.4s var(--ease), transform 0.35s ease, opacity 0.35s ease;
+    }
+    .nav.scrolled .hamburger span { background: var(--cocoa-taupe); }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* Mobile drawer */
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0;
+      right: 0;
+      background: rgba(250, 246, 241, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--petal-blush);
+      padding: 1.8rem 6%;
+      z-index: 850;
+      flex-direction: column;
+      gap: 0;
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: transform 0.35s var(--ease), opacity 0.35s var(--ease);
+      pointer-events: none;
+    }
+    .nav-drawer.open {
+      display: flex;
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: all;
+    }
+    .nav-drawer a {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--pale-linen);
+      transition: color 0.25s ease;
+    }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer a:hover { color: var(--dusty-mauve); }
+
+    /* ═══════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Background layers */
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      /* Photo placeholder — replace src with your actual hero image */
+      background-image:
+        linear-gradient(
+          160deg,
+          rgba(75, 63, 60, 0.78) 0%,
+          rgba(107, 91, 87, 0.55) 45%,
+          rgba(75, 63, 60, 0.80) 100%
+        ),
+        radial-gradient(ellipse at 35% 55%, #7a6560 0%, #4B3F3C 55%, #2d2220 100%);
+      background-size: cover;
+      background-position: center;
+      will-change: transform;
+    }
+
+    /* Botanical SVG watermark */
+    .hero__botanical {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      opacity: 0.055;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23EFD6D2' stroke-width='0.8'%3E%3Cellipse cx='260' cy='260' rx='220' ry='100'/%3E%3Cellipse cx='260' cy='260' rx='100' ry='220'/%3E%3Cellipse cx='260' cy='260' rx='170' ry='170'/%3E%3Cpath d='M260,40 C290,110 290,200 260,260 C230,200 230,110 260,40Z'/%3E%3Cpath d='M260,480 C290,410 290,320 260,260 C230,320 230,410 260,480Z'/%3E%3Cpath d='M40,260 C110,290 200,290 260,260 C200,230 110,230 40,260Z'/%3E%3Cpath d='M480,260 C410,290 320,290 260,260 C320,230 410,230 480,260Z'/%3E%3Ccircle cx='260' cy='260' r='12'/%3E%3Ccircle cx='260' cy='260' r='45'/%3E%3Cpath d='M170,130 C200,160 240,200 260,260 C220,200 180,165 170,130Z'/%3E%3Cpath d='M350,130 C320,160 280,200 260,260 C300,200 320,165 350,130Z'/%3E%3Cpath d='M170,390 C200,360 240,320 260,260 C220,320 180,355 170,390Z'/%3E%3Cpath d='M350,390 C320,360 280,320 260,260 C300,320 320,355 350,390Z'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 340px;
+      pointer-events: none;
+    }
+
+    /* Edge vignette */
+    .hero__vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: radial-gradient(ellipse at 50% 45%, transparent 38%, rgba(30, 22, 20, 0.55) 100%);
+      pointer-events: none;
+    }
+
+    /* Champagne accent line at bottom of hero */
+    .hero__line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      height: 2px;
+      background: linear-gradient(to right, transparent 0%, var(--warm-champagne) 30%, var(--petal-blush) 70%, transparent 100%);
+      opacity: 0.5;
+    }
+
+    /* Floating petals */
+    .petal {
+      position: absolute;
+      border-radius: 50% 50% 50% 0;
+      background: var(--petal-blush);
+      opacity: 0;
+      z-index: 3;
+      pointer-events: none;
+      animation: petalFall linear infinite;
+    }
+    @keyframes petalFall {
+      0%   { transform: translateY(-30px) rotate(0deg);   opacity: 0; }
+      8%   { opacity: 0.28; }
+      88%  { opacity: 0.12; }
+      100% { transform: translateY(105vh) rotate(700deg); opacity: 0; }
+    }
+
+    /* Hero content */
+    .hero__content {
+      position: relative;
+      z-index: 4;
+      text-align: center;
+      padding: 0 24px;
+      max-width: 860px;
+      width: 100%;
+    }
+
+    .hero__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 300;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+      margin-bottom: 1.6rem;
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 0.25s forwards;
+    }
+
+    .hero__script {
+      font-family: var(--script);
+      font-size: clamp(4rem, 9vw, 7.5rem);
+      color: var(--veil-white);
+      line-height: 1;
+      margin-bottom: 0.6rem;
+      text-shadow: 0 4px 40px rgba(75, 63, 60, 0.45);
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 0.55s forwards;
+    }
+
+    .hero__sub {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(0.95rem, 2.4vw, 1.55rem);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 0.85s forwards;
+    }
+
+    .hero__divider {
+      width: 64px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne), transparent);
+      margin: 0 auto 2rem;
+      opacity: 0;
+      animation: fadeIn 1s var(--ease) 1.05s forwards;
+    }
+
+    .hero__tagline {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      color: rgba(250, 246, 241, 0.82);
+      max-width: 580px;
+      margin: 0 auto 3rem;
+      line-height: 1.75;
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 1.25s forwards;
+    }
+
+    .hero__buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 1.45s forwards;
+    }
+
+    .btn--primary {
+      background: var(--cocoa-taupe);
+      color: var(--soft-ivory);
+      border: 1px solid var(--cocoa-taupe);
+      padding: 1rem 2.8rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+    .btn--primary:hover { background: var(--deep-espresso); border-color: var(--deep-espresso); transform: translateY(-3px); }
+
+    .btn--ghost {
+      background: transparent;
+      color: var(--veil-white);
+      border: 1px solid rgba(255,255,255,0.45);
+      padding: 1rem 2.8rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+    .btn--ghost:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.75); transform: translateY(-3px); }
+
+    /* Scroll indicator */
+    .hero__scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      opacity: 0;
+      animation: fadeIn 1.2s var(--ease) 2s forwards;
+    }
+    .hero__scroll span {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+    .hero__scroll-bar {
+      width: 1px;
+      height: 52px;
+      background: linear-gradient(to bottom, rgba(216,194,166,0.6), transparent);
+      animation: scrollPulse 2.4s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { transform: scaleY(1);   opacity: 0.5; }
+      50%       { transform: scaleY(0.5); opacity: 1; }
+    }
+
+    /* ═══════════════════════════════════════
+       SERVICES STRIP
+    ═══════════════════════════════════════ */
+    .services-strip {
+      background: var(--deep-espresso);
+      padding: 0 5%;
+    }
+    .services-strip__inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
+      padding: 2.6rem 1.5rem;
+      border-right: 1px solid rgba(239, 214, 210, 0.1);
+      text-decoration: none;
+      transition: background 0.35s ease;
+      opacity: 0;
+      transform: translateY(18px);
+      transition: background 0.35s ease, opacity 0.65s var(--ease), transform 0.65s var(--ease);
+    }
+    .service-card:last-child { border-right: none; }
+    .service-card:hover { background: rgba(239, 214, 210, 0.05); }
+    .service-card.visible { opacity: 1; transform: translateY(0); }
+
+    .service-card__icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-card__icon svg { width: 28px; height: 28px; stroke: var(--dusty-mauve); fill: none; stroke-width: 1.2; }
+
+    .service-card__name {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+    }
+    .service-card__blurb {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.88rem;
+      color: rgba(250, 246, 241, 0.45);
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* ═══════════════════════════════════════
+       ABOUT SECTION
+    ═══════════════════════════════════════ */
+    .about {
+      position: relative;
+      padding: 8rem 5% 7rem;
+      background: var(--soft-ivory);
+      overflow: hidden;
+    }
+
+    /* Large watermark script behind section */
+    .about::before {
+      content: 'About';
+      position: absolute;
+      top: 4rem;
+      right: -1.5rem;
+      font-family: var(--script);
+      font-size: clamp(6rem, 14vw, 13rem);
+      color: var(--petal-blush);
+      opacity: 0.28;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .about__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 7rem;
+      align-items: center;
+    }
+
+    /* Image column */
+    .about__image-wrap {
+      position: relative;
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+    }
+    .about__image-wrap.visible { opacity: 1; transform: translateX(0); }
+
+    .about__frame {
+      position: relative;
+      padding-bottom: 118%;
+      overflow: hidden;
+      background: var(--pale-linen);
+    }
+    .about__frame img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Placeholder shown until you drop in a real photo */
+    .about__placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: linear-gradient(145deg, var(--pale-linen) 0%, var(--petal-blush) 100%);
+    }
+    .about__placeholder-script {
+      font-family: var(--script);
+      font-size: 2.8rem;
+      color: var(--cocoa-taupe);
+      opacity: 0.45;
+    }
+    .about__placeholder-label {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      opacity: 0.7;
+    }
+
+    /* Offset accent badge */
+    .about__badge {
+      position: absolute;
+      bottom: -1.8rem;
+      right: -1.8rem;
+      background: var(--deep-espresso);
+      padding: 2rem 2.4rem;
+      text-align: center;
+      z-index: 2;
+      box-shadow: 0 8px 32px rgba(75, 63, 60, 0.22);
+    }
+    .about__badge-number {
+      font-family: var(--serif);
+      font-size: 3.2rem;
+      font-weight: 300;
+      color: var(--warm-champagne);
+      line-height: 1;
+      display: block;
+    }
+    .about__badge-label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(250, 246, 241, 0.5);
+      margin-top: 0.3rem;
+      display: block;
+    }
+
+    /* Copy column */
+    .about__copy {
+      opacity: 0;
+      transform: translateX(30px);
+      transition: opacity 0.9s var(--ease) 0.15s, transform 0.9s var(--ease) 0.15s;
+    }
+    .about__copy.visible { opacity: 1; transform: translateX(0); }
+
+    .about__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      margin-bottom: 1rem;
+    }
+
+    .about__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      color: var(--deep-espresso);
+      line-height: 1.18;
+      margin-bottom: 0.4rem;
+    }
+    .about__headline em { font-style: italic; color: var(--dusty-mauve); }
+
+    .about__script-bridge {
+      font-family: var(--script);
+      font-size: 1.85rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+
+    .about__divider {
+      width: 52px;
+      height: 1px;
+      background: var(--warm-champagne);
+      margin-bottom: 2.2rem;
+    }
+
+    .about__text {
+      font-family: var(--sans);
+      font-size: 0.94rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.95;
+      margin-bottom: 1.5rem;
+    }
+    .about__text strong { font-weight: 700; color: var(--deep-espresso); }
+
+    .about__signature {
+      font-family: var(--script);
+      font-size: 1.9rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin: 1.8rem 0 2.5rem;
+    }
+
+    .btn--soft {
+      display: inline-block;
+      background: var(--petal-blush);
+      color: var(--cocoa-taupe);
+      border: 1px solid var(--petal-blush);
+      padding: 0.9rem 2.4rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--soft:hover { background: var(--dusty-mauve); border-color: var(--dusty-mauve); color: #fff; transform: translateY(-2px); }
+
+    /* ═══════════════════════════════════════
+       MOUNTAIN PROMISE RIBBON
+    ═══════════════════════════════════════ */
+    .ribbon {
+      background: var(--pale-linen);
+      padding: 5rem 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ribbon::before,
+    .ribbon::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne) 35%, var(--petal-blush) 65%, transparent);
+    }
+    .ribbon::before { top: 0; }
+    .ribbon::after  { bottom: 0; }
+
+    /* decorative mountain silhouette */
+    .ribbon__mountains {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      opacity: 0.18;
+    }
+    .ribbon__mountains svg { width: 220px; height: 50px; fill: var(--cocoa-taupe); }
+
+    .ribbon__script {
+      font-family: var(--script);
+      font-size: 2.6rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .ribbon__label {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: 0.9rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      margin-bottom: 0.4rem;
+    }
+    .ribbon__place {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.8rem;
+      color: var(--deep-espresso);
+      display: block;
+    }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ */
+    footer {
+      background: var(--deep-espresso);
+      padding: 5rem 5% 2.5rem;
+    }
+
+    .footer__grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer__brand-script {
+      font-family: var(--script);
+      font-size: 2.6rem;
+      color: var(--warm-champagne);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .footer__brand-tag {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(216, 194, 166, 0.5);
+      display: block;
+      margin-bottom: 1.4rem;
+    }
+    .footer__brand-text {
+      font-family: var(--sans);
+      font-size: 0.83rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250, 246, 241, 0.55);
+      max-width: 280px;
+    }
+
+    .footer__col-title {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+    .footer__nav { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+    .footer__nav a {
+      font-family: var(--sans);
+      font-size: 0.83rem;
+      font-weight: 300;
+      color: rgba(250, 246, 241, 0.5);
+      transition: color 0.3s ease;
+    }
+    .footer__nav a:hover { color: var(--warm-champagne); }
+
+    .footer__bottom {
+      max-width: 1100px;
+      margin: 2.5rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .footer__copy {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: rgba(250, 246, 241, 0.28);
+    }
+    .footer__hearts {
+      font-family: var(--script);
+      font-size: 1.3rem;
+      color: var(--petal-blush);
+      opacity: 0.45;
+    }
+
+    /* ═══════════════════════════════════════
+       KEYFRAMES
+    ═══════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* Generic reveal class */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .about__inner { grid-template-columns: 1fr; gap: 5rem; }
+      .about__image-wrap { max-width: 480px; margin: 0 auto; width: 100%; }
+      .about__badge { bottom: -1.4rem; right: -0.6rem; }
+      .services-strip__inner { grid-template-columns: repeat(2, 1fr); }
+      .service-card:nth-child(2) { border-right: none; }
+      .service-card:nth-child(3) { border-right: 1px solid rgba(239,214,210,0.1); border-top: 1px solid rgba(239,214,210,0.08); }
+      .service-card:nth-child(4) { border-right: none; border-top: 1px solid rgba(239,214,210,0.08); }
+      .footer__grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+      .footer__brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .about::before { font-size: 5rem; opacity: 0.18; }
+      .services-strip__inner { grid-template-columns: repeat(2, 1fr); }
+      .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+      .hero__tagline { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- HERO -->
-    <section class="hero">
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Vow Makers home">
+      <span class="nav-logo-script">Vow Makers</span>
+      <span class="nav-logo-tagline">Smoky Mountain Weddings</span>
+    </a>
 
-        <div class="hero-content">
-            <h1>Smoky Mountain Weddings in Sevierville, Gatlinburg & Pigeon Forge</h1>
-            <p>From "I do" to the last dance — we handle every detail so you can simply be present.</p>
-            <p><strong>Officiant • DJ • Coordination • Florals • Tailoring • Custom Crafts</strong></p>
-            
-            <div>
-                <a href="contact.html" class="btn btn-primary">Book a Free Consultation</a>
-                <a href="services.html" class="btn btn-secondary">View Our Packages</a>
-            </div>
-        </div>
-    </section>
+    <ul class="nav-links" role="list">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Wedding Advice</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+    </ul>
 
-    <!-- TRUST BAR -->
-    <section class="trust-bar">
-        <div class="trust-item">
-            <h2>⚓</h2>
-            <h3>Ordained Navy Chaplain</h3>
-            <p>Decades of service. A ceremony rooted in genuine faith and care.</p>
-        </div>
-        <div class="trust-item">
-            <h2>💍</h2>
-            <h3>Married 27+ Years</h3>
-            <p>We don't just celebrate marriage. We live it every day.</p>
-        </div>
-        <div class="trust-item">
-            <h2>★</h2>
-            <h3>One Team. Every Detail.</h3>
-            <p>Officiant, DJ, planner, florist, tailor — all under one roof.</p>
-        </div>
-    </section>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <!-- INTRO -->
-    <section class="intro">
-        <h2>The Smoky Mountains Are Calling.<br>Let's Make It Unforgettable.</h2>
-        <p>Vow Makers is a husband and wife team based right here in Sevierville, Tennessee. Together, we offer everything a couple needs for their perfect Smoky Mountain wedding — from a heartfelt ceremony officiated by a retired Navy chaplain, to custom floral arrangements, professional DJ services, full wedding coordination, garment tailoring, and one-of-a-kind handcrafted wood keepsakes.</p>
-        <p>With over 27 years of marriage between us, we understand that your wedding day isn't just an event — it's a beginning. No juggling a dozen different vendors. Just one trusted team, fully invested in your day from start to finish.</p>
-    </section>
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Wedding Advice</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="contact.html">Book a Consultation</a>
+  </div>
 
-    <!-- SERVICES SNAPSHOT -->
-    <section class="services">
-        <div style="max-width:1100px; margin:0 auto; text-align:center; margin-bottom:50px;">
-            <h2 style="color:var(--navy); font-size:2.4rem;">Everything You Need.<br>One Husband & Wife Team.</h2>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Officiant Ceremonies</h3>
-                <p>Traditional, Christian, civil, non-denominational, and vow renewals — led by a retired Navy chaplain.</p>
-            </div>
-            <div class="service-card">
-                <h3>DJ & Sound Services</h3>
-                <p>Professional music and sound curated by an accomplished musician from first note to final dance.</p>
-            </div>
-            <div class="service-card">
-                <h3>Full Wedding Coordination</h3>
-                <p>Every detail, timeline, and vendor handled so you can be fully present.</p>
-            </div>
-            <div class="service-card">
-                <h3>Floral Arrangements</h3>
-                <p>Custom bouquets, centerpieces, and ceremony pieces designed with an artist's eye.</p>
-            </div>
-            <div class="service-card">
-                <h3>Garment Tailoring</h3>
-                <p>Expert bridal and formalwear alterations — your dress will fit perfectly.</p>
-            </div>
-            <div class="service-card">
-                <h3>Custom Wood Keepsakes</h3>
-                <p>Handcrafted last name signs and heirloom pieces made with care.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- CLOSING CTA -->
-    <section class="cta">
-        <h2>Your Date Is Waiting.<br>Let's Start Planning.</h2>
-        <p style="font-size:1.3rem; max-width:700px; margin:0 auto 30px;">
-            Reach out today for a free consultation and let's talk about your vision for your perfect Smoky Mountain wedding.
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <!--
+    PHOTO TIP: To use a real hero photo, add it as a second layer in .hero__bg:
+      background-image: linear-gradient(...), url('your-photo.jpg');
+      background-size: cover, cover;
+      background-position: center, center;
+  -->
+  <section class="hero" id="hero" aria-label="Hero">
+    <div class="hero__bg" id="hero-bg"></div>
+    <div class="hero__botanical" aria-hidden="true"></div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__line" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Sevier County, Tennessee &nbsp;·&nbsp; Where Mountains Meet Forever</p>
+
+      <h1 class="hero__script">Vow Makers</h1>
+
+      <p class="hero__sub">Your Smoky Mountain Wedding Team</p>
+
+      <div class="hero__divider" aria-hidden="true"></div>
+
+      <p class="hero__tagline">
+        We don't just help with weddings — we help you make promises that last.
+        Wrapped in mountain magic, carried by music, graced with flowers,
+        and held together with genuine love.
+      </p>
+
+      <div class="hero__buttons">
+        <a href="services.html" class="btn--primary">Explore Our Services</a>
+        <a href="#about"        class="btn--ghost">Meet the Team</a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll to learn more">
+      <span>Discover</span>
+      <div class="hero__scroll-bar" aria-hidden="true"></div>
+    </a>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SERVICES STRIP
+  ═══════════════════════════════════════ -->
+  <div class="services-strip" aria-label="Our services">
+    <div class="services-strip__inner">
+
+      <a href="services.html#officiant" class="service-card">
+        <div class="service-card__icon">
+          <!-- Rings icon -->
+          <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="9" cy="14" r="6"/><circle cx="19" cy="14" r="6"/></svg>
+        </div>
+        <span class="service-card__name">Officiant</span>
+        <span class="service-card__blurb">Your words, your way</span>
+      </a>
+
+      <a href="services.html#music" class="service-card">
+        <div class="service-card__icon">
+          <!-- Music note icon -->
+          <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M11 20V8l12-3v12"/><circle cx="8" cy="20" r="3"/><circle cx="20" cy="17" r="3"/></svg>
+        </div>
+        <span class="service-card__name">Music &amp; DJ</span>
+        <span class="service-card__blurb">The perfect soundtrack</span>
+      </a>
+
+      <a href="services.html#florals" class="service-card">
+        <div class="service-card__icon">
+          <!-- Flower icon -->
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <circle cx="14" cy="14" r="3"/>
+            <ellipse cx="14" cy="7"  rx="2.5" ry="4" transform="rotate(0   14 14)"/>
+            <ellipse cx="14" cy="7"  rx="2.5" ry="4" transform="rotate(60  14 14)"/>
+            <ellipse cx="14" cy="7"  rx="2.5" ry="4" transform="rotate(120 14 14)"/>
+            <ellipse cx="14" cy="7"  rx="2.5" ry="4" transform="rotate(180 14 14)"/>
+            <ellipse cx="14" cy="7"  rx="2.5" ry="4" transform="rotate(240 14 14)"/>
+            <ellipse cx="14" cy="7"  rx="2.5" ry="4" transform="rotate(300 14 14)"/>
+          </svg>
+        </div>
+        <span class="service-card__name">Florals</span>
+        <span class="service-card__blurb">Natural, romantic beauty</span>
+      </a>
+
+      <a href="services.html#planning" class="service-card">
+        <div class="service-card__icon">
+          <!-- Sparkle / star icon -->
+          <svg viewBox="0 0 28 28" aria-hidden="true">
+            <path d="M14 4 L15.5 12 L23 14 L15.5 16 L14 24 L12.5 16 L5 14 L12.5 12 Z"/>
+          </svg>
+        </div>
+        <span class="service-card__name">Planning</span>
+        <span class="service-card__blurb">Every detail, handled</span>
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════════ -->
+  <section class="about" id="about" aria-labelledby="about-headline">
+    <div class="about__inner">
+
+      <!-- Image column -->
+      <div class="about__image-wrap" id="about-img">
+        <div class="about__frame">
+          <!--
+            PHOTO TIP: Replace the placeholder div below with:
+            <img src="your-couple-photo.jpg" alt="Zach and [Name], the Vow Makers team" />
+          -->
+          <div class="about__placeholder" aria-hidden="true">
+            <span class="about__placeholder-script">Vow Makers</span>
+            <span class="about__placeholder-label">Your photo here</span>
+          </div>
+        </div>
+        <div class="about__badge" aria-label="27 plus years of marriage">
+          <span class="about__badge-number">27+</span>
+          <span class="about__badge-label">Years of Marriage</span>
+        </div>
+      </div>
+
+      <!-- Copy column -->
+      <div class="about__copy" id="about-copy">
+        <p class="about__eyebrow">Rooted in Love &nbsp;·&nbsp; Raised in the Smokies</p>
+
+        <h2 class="about__headline" id="about-headline">
+          We've Been Where<br><em>You're Standing.</em>
+        </h2>
+        <span class="about__script-bridge">And it is the best place in the world.</span>
+
+        <div class="about__divider" aria-hidden="true"></div>
+
+        <p class="about__text">
+          We're a husband-and-wife team, and after <strong>more than 27 years of marriage</strong>,
+          we can tell you this with complete confidence: a beautiful wedding day is only the beginning.
+          The promise you make is what matters most — and we're here to help you make it beautifully.
         </p>
-        <a href="contact.html" class="btn btn-primary" style="font-size:1.25rem; padding:16px 40px;">Book Your Free Consultation</a>
-        <p style="margin-top:40px; opacity:0.9;">
-            Serving Sevierville • Gatlinburg • Pigeon Forge • and the greater Smoky Mountain region
-        </p>
-    </section>
 
-    <footer>
-        <p><strong>Vow Makers</strong> — Sevierville, Tennessee</p>
-        <p>Serving Sevierville • Gatlinburg • Pigeon Forge • and the greater Smoky Mountain region</p>
-        <p>© 2026 Vow Makers</p>
-    </footer>
+        <p class="about__text">
+          From our home in the <strong>Smoky Mountains of Sevier County, Tennessee</strong>, we've
+          built something we're genuinely proud of — a full-service wedding team that handles your
+          music, florals, ceremony, and every detail in between. You get the breathtaking backdrop
+          of East Tennessee and the peace of mind that comes from working with people who truly care.
+        </p>
+
+        <p class="about__text">
+          We're not just vendors checking boxes. We're your people — calm under pressure, experienced
+          in the details, and deeply honored every time a couple trusts us with their most important day.
+        </p>
+
+        <!--
+          PERSONALIZATION NOTE: Replace [Your Name] below with the correct name.
+        -->
+        <span class="about__signature">With love, Zach &amp; [Your Name]</span>
+
+        <a href="about.html" class="btn--soft">Read Our Full Story</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       MOUNTAIN RIBBON
+  ═══════════════════════════════════════ -->
+  <div class="ribbon reveal" aria-label="Location">
+    <div class="ribbon__mountains" aria-hidden="true">
+      <svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="0,50 40,10 70,30 110,0 150,25 185,8 220,50"/>
+      </svg>
+    </div>
+    <span class="ribbon__script">Nestled in the Mountains</span>
+    <p class="ribbon__label">Proudly Serving Couples Throughout</p>
+    <span class="ribbon__place">Sevier County &amp; the Great Smoky Mountains</span>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <span class="footer__brand-script">Vow Makers</span>
+        <span class="footer__brand-tag">Smoky Mountain Weddings</span>
+        <p class="footer__brand-text">
+          A husband-and-wife wedding team serving the Smoky Mountain region
+          of East Tennessee. Officiant · Music · Florals · Planning.
+        </p>
+      </div>
+
+      <div>
+        <span class="footer__col-title">Navigate</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="blog.html">Wedding Advice</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer__col-title">Connect</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="contact.html">Book a Consultation</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; 2026 Vow Makers &nbsp;·&nbsp; Sevier County, Tennessee &nbsp;·&nbsp; All rights reserved
+      </p>
+      <span class="footer__hearts" aria-hidden="true">&#9825; Made with love &#9825;</span>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script>
+    /* ─── Nav scroll state ─── */
+    const mainNav = document.getElementById('main-nav');
+    const heroBg  = document.getElementById('hero-bg');
+
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      mainNav.classList.toggle('scrolled', y > 60);
+      // Subtle parallax on hero background
+      if (heroBg && y < window.innerHeight * 1.2) {
+        heroBg.style.transform = `translateY(${y * 0.35}px)`;
+      }
+    }, { passive: true });
+
+
+    /* ─── Hamburger / mobile drawer ─── */
+    const hamburger = document.getElementById('hamburger');
+    const navDrawer = document.getElementById('nav-drawer');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navDrawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    navDrawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navDrawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+
+    /* ─── Floating petals ─── */
+    const heroEl = document.getElementById('hero');
+
+    function spawnPetal() {
+      const p = document.createElement('div');
+      p.className = 'petal';
+      const size = Math.random() * 7 + 4;
+      const dur  = Math.random() * 9 + 9;
+      const del  = Math.random() * 3;
+      p.style.cssText = `
+        left: ${Math.random() * 100}%;
+        width: ${size}px;
+        height: ${size * 1.35}px;
+        animation-duration: ${dur}s;
+        animation-delay: ${del}s;
+        border-radius: ${Math.random() > 0.5 ? '50% 50% 50% 0' : '0 50% 50% 50%'};
+      `;
+      heroEl.appendChild(p);
+      setTimeout(() => p.remove(), (dur + del + 0.5) * 1000);
+    }
+
+    // Initial burst
+    for (let i = 0; i < 18; i++) spawnPetal();
+    // Ongoing trickle
+    setInterval(spawnPetal, 1100);
+
+
+    /* ─── Scroll-triggered reveal (IntersectionObserver) ─── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        const el = entry.target;
+
+        // Stagger service cards
+        if (el.classList.contains('service-card')) {
+          const cards = document.querySelectorAll('.service-card');
+          cards.forEach((card, i) => {
+            setTimeout(() => card.classList.add('visible'), i * 110);
+          });
+          cards.forEach(c => io.unobserve(c));
+          return;
+        }
+
+        el.classList.add('visible');
+        io.unobserve(el);
+      });
+    }, { threshold: 0.14, rootMargin: '0px 0px -40px 0px' });
+
+    // Observe everything that needs animating
+    document.querySelectorAll(
+      '.service-card, .about__image-wrap, .about__copy, .reveal'
+    ).forEach(el => io.observe(el));
+  </script>
 
 </body>
 </html>
