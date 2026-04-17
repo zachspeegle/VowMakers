@@ -1,203 +1,1352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet Vow Makers - a husband and wife team in Sevierville, Tennessee with 27+ years of marriage. Retired Navy Chaplain officiant and master designer offering heartfelt Smoky Mountain weddings.">
-    <title>About Us | Vow Makers - Smoky Mountain Weddings</title>
-    <style>
-        :root {
-            --navy: #0A2540;
-            --gold: #D4AF37;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: var(--navy);
-            color: white;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-        }
-        .nav a:hover { color: var(--gold); }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story | Vow Makers — Smoky Mountain Weddings</title>
+  <meta name="description" content="Meet the husband-and-wife team behind Vow Makers. After 27+ years of marriage and a lifetime in the Smoky Mountains, we bring real experience and genuine heart to your wedding day." />
 
-        .hero-small {
-            height: 40vh;
-            min-height: 300px;
-            background: linear-gradient(rgba(10,37,64,0.7), rgba(10,37,64,0.8)),
-                        url('https://github.com/zachspeegle/Images/raw/main/IMG_1251.jpeg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-        .hero-small h1 {
-            font-size: 2.8rem;
-        }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
-        .content {
-            max-width: 1100px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        .section {
-            margin-bottom: 70px;
-        }
-        .section h2 {
-            color: var(--navy);
-            font-size: 2.3rem;
-            margin-bottom: 24px;
-            text-align: center;
-        }
-        .team {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 50px;
-            margin-top: 40px;
-        }
-        .team-member {
-            text-align: center;
-        }
-        .team-member h3 {
-            color: var(--navy);
-            margin: 16px 0 8px;
-        }
-        .values {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-            text-align: center;
-        }
-        .value {
-            max-width: 280px;
-        }
-        .value h3 {
-            color: var(--gold);
-            font-size: 1.6rem;
-        }
+  <style>
+    /* ═══════════════════════════════════════
+       BRAND TOKENS (identical to index.html)
+    ═══════════════════════════════════════ */
+    :root {
+      --petal-blush:    #EFD6D2;
+      --dusty-mauve:    #B79AA3;
+      --warm-champagne: #D8C2A6;
+      --soft-ivory:     #FAF6F1;
+      --cocoa-taupe:    #6B5B57;
+      --deep-espresso:  #4B3F3C;
+      --veil-white:     #FFFFFF;
+      --pale-linen:     #F3ECE6;
 
-        .cta {
-            background: var(--navy);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-            margin: 60px 0;
-        }
-        .btn {
-            display: inline-block;
-            padding: 14px 34px;
-            background: var(--gold);
-            color: var(--navy);
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .btn:hover {
-            background: #e5c15a;
-        }
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --script: 'Great Vibes', cursive;
+      --sans:   'Lato', sans-serif;
 
-        /* Navy Footer */
-        footer {
-            background: var(--navy);
-            color: #ddd;
-            text-align: center;
-            padding: 40px 20px;
-        }
-    </style>
+      --nav-h: 76px;
+      --ease:  cubic-bezier(0.4, 0, 0.2, 1);
+      --max:   1100px;
+    }
+
+    /* ═══════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--soft-ivory);
+      color: var(--cocoa-taupe);
+      font-family: var(--sans);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ═══════════════════════════════════════
+       NAVIGATION  (same as index)
+    ═══════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 900;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      transition: background 0.5s var(--ease), box-shadow 0.5s var(--ease);
+      background: rgba(250, 246, 241, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 24px rgba(75, 63, 60, 0.09);
+    }
+
+    .nav-logo { display: flex; flex-direction: column; line-height: 1; gap: 1px; }
+    .nav-logo-script {
+      font-family: var(--script);
+      font-size: 2rem;
+      color: var(--cocoa-taupe);
+      letter-spacing: 0.01em;
+    }
+    .nav-logo-tagline {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--dusty-mauve);
+      transition: width 0.35s ease;
+    }
+    .nav-links a:hover { color: var(--deep-espresso); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a.active { color: var(--dusty-mauve); }
+    .nav-links a.active::after { width: 100%; background: var(--dusty-mauve); }
+
+    .nav-cta {
+      display: inline-block;
+      padding: 0.55rem 1.5rem;
+      border: 1px solid var(--cocoa-taupe);
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe) !important;
+      border-radius: 1px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .nav-cta:hover { background: var(--cocoa-taupe); color: var(--soft-ivory) !important; }
+    .nav-cta::after { display: none !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 1.5px;
+      background: var(--cocoa-taupe);
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      background: rgba(250, 246, 241, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--petal-blush);
+      padding: 1.8rem 6%;
+      z-index: 850;
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav-drawer.open { display: flex; }
+    .nav-drawer a {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--pale-linen);
+      transition: color 0.25s ease;
+    }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer a:hover { color: var(--dusty-mauve); }
+
+    /* ═══════════════════════════════════════
+       PAGE HERO  (inner-page style — ~60vh)
+    ═══════════════════════════════════════ */
+    .page-hero {
+      position: relative;
+      min-height: 62vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: var(--nav-h);
+    }
+
+    .page-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(
+          155deg,
+          rgba(75, 63, 60, 0.82) 0%,
+          rgba(107, 91, 87, 0.55) 50%,
+          rgba(183, 154, 163, 0.40) 75%,
+          rgba(75, 63, 60, 0.80) 100%
+        ),
+        radial-gradient(ellipse at 60% 40%, #8c726b 0%, #4B3F3C 55%, #2d2220 100%);
+      background-size: cover;
+      background-position: center;
+    }
+    /*
+      PHOTO TIP: To use a hero photo here, update .page-hero__bg background-image:
+      linear-gradient(...), url('your-about-photo.jpg');
+    */
+
+    .page-hero__botanical {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23EFD6D2' stroke-width='0.8'%3E%3Cellipse cx='260' cy='260' rx='220' ry='100'/%3E%3Cellipse cx='260' cy='260' rx='100' ry='220'/%3E%3Cellipse cx='260' cy='260' rx='170' ry='170'/%3E%3Cpath d='M260,40 C290,110 290,200 260,260 C230,200 230,110 260,40Z'/%3E%3Cpath d='M260,480 C290,410 290,320 260,260 C230,320 230,410 260,480Z'/%3E%3Cpath d='M40,260 C110,290 200,290 260,260 C200,230 110,230 40,260Z'/%3E%3Cpath d='M480,260 C410,290 320,290 260,260 C320,230 410,230 480,260Z'/%3E%3Ccircle cx='260' cy='260' r='12'/%3E%3Ccircle cx='260' cy='260' r='45'/%3E%3Cpath d='M170,130 C200,160 240,200 260,260 C220,200 180,165 170,130Z'/%3E%3Cpath d='M350,130 C320,160 280,200 260,260 C300,200 320,165 350,130Z'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 340px;
+      pointer-events: none;
+    }
+    .page-hero__vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: radial-gradient(ellipse at 50% 45%, transparent 30%, rgba(30, 22, 20, 0.52) 100%);
+      pointer-events: none;
+    }
+    .page-hero__line {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      z-index: 3;
+      height: 2px;
+      background: linear-gradient(to right, transparent 0%, var(--warm-champagne) 30%, var(--petal-blush) 70%, transparent 100%);
+      opacity: 0.5;
+    }
+
+    .page-hero__content {
+      position: relative;
+      z-index: 4;
+      text-align: center;
+      padding: 2rem 24px 3rem;
+      max-width: 780px;
+      width: 100%;
+    }
+    .page-hero__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.66rem;
+      font-weight: 300;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      animation: fadeUp 0.9s var(--ease) 0.2s forwards;
+    }
+    .page-hero__script {
+      font-family: var(--script);
+      font-size: clamp(3.2rem, 7vw, 6rem);
+      color: var(--veil-white);
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-shadow: 0 4px 40px rgba(75, 63, 60, 0.4);
+      opacity: 0;
+      animation: fadeUp 0.9s var(--ease) 0.45s forwards;
+    }
+    .page-hero__divider {
+      width: 54px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne), transparent);
+      margin: 0 auto 1.4rem;
+      opacity: 0;
+      animation: fadeIn 0.9s var(--ease) 0.7s forwards;
+    }
+    .page-hero__sub {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      color: rgba(250, 246, 241, 0.78);
+      opacity: 0;
+      animation: fadeUp 0.9s var(--ease) 0.85s forwards;
+      line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════
+       SECTION GLOBALS
+    ═══════════════════════════════════════ */
+    .section-eyebrow {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 0.9rem;
+    }
+    .section-headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: var(--deep-espresso);
+      line-height: 1.18;
+    }
+    .section-headline em { font-style: italic; color: var(--dusty-mauve); }
+    .section-divider {
+      width: 52px; height: 1px;
+      background: var(--warm-champagne);
+      margin: 1.8rem 0 2.2rem;
+    }
+    .section-divider--center { margin: 1.8rem auto 2.2rem; }
+    .body-text {
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.95;
+      margin-bottom: 1.5rem;
+    }
+    .body-text strong { font-weight: 700; color: var(--deep-espresso); }
+    .body-text:last-of-type { margin-bottom: 0; }
+
+    /* Buttons */
+    .btn--primary {
+      display: inline-block;
+      background: var(--cocoa-taupe);
+      color: var(--soft-ivory);
+      border: 1px solid var(--cocoa-taupe);
+      padding: 1rem 2.8rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--primary:hover { background: var(--deep-espresso); border-color: var(--deep-espresso); transform: translateY(-2px); }
+
+    .btn--soft {
+      display: inline-block;
+      background: var(--petal-blush);
+      color: var(--cocoa-taupe);
+      border: 1px solid var(--petal-blush);
+      padding: 0.9rem 2.4rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--soft:hover { background: var(--dusty-mauve); border-color: var(--dusty-mauve); color: #fff; transform: translateY(-2px); }
+
+    .btn--mauve {
+      display: inline-block;
+      background: var(--dusty-mauve);
+      color: #fff;
+      border: 1px solid var(--dusty-mauve);
+      padding: 1rem 2.8rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--mauve:hover { background: var(--cocoa-taupe); border-color: var(--cocoa-taupe); transform: translateY(-2px); }
+
+    /* Reveal animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal--left {
+      opacity: 0;
+      transform: translateX(-28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal--left.visible { opacity: 1; transform: translateX(0); }
+    .reveal--right {
+      opacity: 0;
+      transform: translateX(28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal--right.visible { opacity: 1; transform: translateX(0); }
+
+    /* ═══════════════════════════════════════
+       INTRO — THE STORY  (2-col)
+    ═══════════════════════════════════════ */
+    .story {
+      padding: 8rem 5% 7rem;
+      background: var(--soft-ivory);
+      position: relative;
+      overflow: hidden;
+    }
+    .story::before {
+      content: 'Story';
+      position: absolute;
+      top: 3rem; right: -1rem;
+      font-family: var(--script);
+      font-size: clamp(6rem, 14vw, 13rem);
+      color: var(--petal-blush);
+      opacity: 0.28;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+    .story__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 7rem;
+      align-items: start;
+    }
+
+    /* Photo column */
+    .story__image {
+      position: sticky;
+      top: calc(var(--nav-h) + 3rem);
+    }
+    .story__frame {
+      position: relative;
+      padding-bottom: 122%;
+      overflow: hidden;
+      background: var(--pale-linen);
+    }
+    .story__frame img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .story__placeholder {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 1rem;
+      background: linear-gradient(145deg, var(--pale-linen) 0%, var(--petal-blush) 100%);
+    }
+    .story__placeholder span:first-child {
+      font-family: var(--script);
+      font-size: 3rem;
+      color: var(--cocoa-taupe);
+      opacity: 0.45;
+    }
+    .story__placeholder span:last-child {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      opacity: 0.7;
+    }
+
+    /* Badge */
+    .story__badge {
+      position: absolute;
+      bottom: -1.8rem; right: -1.8rem;
+      background: var(--deep-espresso);
+      padding: 2rem 2.4rem;
+      text-align: center;
+      z-index: 2;
+      box-shadow: 0 8px 32px rgba(75, 63, 60, 0.22);
+    }
+    .story__badge-number {
+      font-family: var(--serif);
+      font-size: 3.2rem;
+      font-weight: 300;
+      color: var(--warm-champagne);
+      line-height: 1;
+      display: block;
+    }
+    .story__badge-label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(250, 246, 241, 0.5);
+      margin-top: 0.3rem;
+      display: block;
+    }
+
+    /* Copy column */
+    .story__copy { padding-top: 0.5rem; }
+    .story__script-bridge {
+      font-family: var(--script);
+      font-size: 1.9rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 2rem;
+      opacity: 0.85;
+    }
+    .story__signature {
+      font-family: var(--script);
+      font-size: 2rem;
+      color: var(--dusty-mauve);
+      display: block;
+      margin: 2rem 0 2.5rem;
+    }
+    .story__pull-quote {
+      border-left: 2px solid var(--warm-champagne);
+      padding: 0.6rem 0 0.6rem 1.8rem;
+      margin: 2.5rem 0;
+    }
+    .story__pull-quote p {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--deep-espresso);
+      line-height: 1.6;
+    }
+    .story__pull-quote cite {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      font-style: normal;
+      display: block;
+      margin-top: 0.7rem;
+    }
+
+    /* ═══════════════════════════════════════
+       VALUES SECTION
+    ═══════════════════════════════════════ */
+    .values {
+      background: var(--pale-linen);
+      padding: 7rem 5%;
+      position: relative;
+      overflow: hidden;
+    }
+    .values::before,
+    .values::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne) 35%, var(--petal-blush) 65%, transparent);
+    }
+    .values::before { top: 0; }
+    .values::after  { bottom: 0; }
+
+    .values__header {
+      max-width: var(--max);
+      margin: 0 auto 4.5rem;
+      text-align: center;
+    }
+    .values__grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .value-card {
+      background: var(--veil-white);
+      padding: 2.8rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .value-card:hover {
+      border-bottom-color: var(--dusty-mauve);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(75, 63, 60, 0.1);
+    }
+    .value-card__icon {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--petal-blush);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .value-card__icon svg {
+      width: 22px; height: 22px;
+      stroke: var(--cocoa-taupe);
+      fill: none;
+      stroke-width: 1.3;
+    }
+    .value-card__title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--deep-espresso);
+    }
+    .value-card__text {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.8;
+    }
+
+    /* ═══════════════════════════════════════
+       MEET THE TEAM
+    ═══════════════════════════════════════ */
+    .team {
+      padding: 8rem 5%;
+      background: var(--soft-ivory);
+      position: relative;
+      overflow: hidden;
+    }
+    .team::before {
+      content: 'Team';
+      position: absolute;
+      bottom: 2rem; left: -1rem;
+      font-family: var(--script);
+      font-size: clamp(6rem, 14vw, 13rem);
+      color: var(--petal-blush);
+      opacity: 0.22;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .team__header {
+      max-width: var(--max);
+      margin: 0 auto 5rem;
+      text-align: center;
+    }
+    .team__grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+    }
+
+    .team-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .team-card__photo {
+      position: relative;
+      padding-bottom: 90%;
+      overflow: hidden;
+      background: var(--pale-linen);
+      margin-bottom: 2rem;
+    }
+    .team-card__photo img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .team-card__photo-placeholder {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 0.8rem;
+    }
+    /* Alternate placeholder color per card */
+    .team-card--zach .team-card__photo-placeholder {
+      background: linear-gradient(145deg, var(--pale-linen) 0%, #c9b5b0 100%);
+    }
+    .team-card--partner .team-card__photo-placeholder {
+      background: linear-gradient(145deg, var(--pale-linen) 0%, var(--petal-blush) 100%);
+    }
+    .team-card__photo-placeholder span:first-child {
+      font-family: var(--script);
+      font-size: 2.5rem;
+      color: var(--cocoa-taupe);
+      opacity: 0.45;
+    }
+    .team-card__photo-placeholder span:last-child {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      opacity: 0.5;
+    }
+
+    .team-card__role {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      margin-bottom: 0.5rem;
+    }
+    .team-card__name {
+      font-family: var(--script);
+      font-size: 2.4rem;
+      color: var(--deep-espresso);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .team-card__divider {
+      width: 40px; height: 1px;
+      background: var(--warm-champagne);
+      margin-bottom: 1.3rem;
+    }
+    .team-card__bio {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.9;
+      margin-bottom: 1.2rem;
+    }
+    .team-card__quote {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--dusty-mauve);
+      border-left: 2px solid var(--petal-blush);
+      padding-left: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════
+       STATS BAND
+    ═══════════════════════════════════════ */
+    .stats {
+      background: var(--deep-espresso);
+      padding: 5rem 5%;
+    }
+    .stats__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      border-right: 1px solid rgba(239, 214, 210, 0.12);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-item__number {
+      font-family: var(--serif);
+      font-size: 3.4rem;
+      font-weight: 300;
+      color: var(--warm-champagne);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .stat-item__label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(250, 246, 241, 0.48);
+    }
+    .stat-item__sub {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.88rem;
+      color: rgba(250, 246, 241, 0.3);
+      margin-top: 0.3rem;
+    }
+
+    /* ═══════════════════════════════════════
+       CTA RIBBON
+    ═══════════════════════════════════════ */
+    .cta-ribbon {
+      background: var(--petal-blush);
+      padding: 6.5rem 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-ribbon__watermark {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      user-select: none;
+      overflow: hidden;
+    }
+    .cta-ribbon__watermark span {
+      font-family: var(--script);
+      font-size: clamp(8rem, 20vw, 18rem);
+      color: rgba(107, 91, 87, 0.08);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .cta-ribbon__content {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .cta-ribbon__script {
+      font-family: var(--script);
+      font-size: 2.6rem;
+      color: var(--cocoa-taupe);
+      display: block;
+      margin-bottom: 0.4rem;
+      opacity: 0.8;
+    }
+    .cta-ribbon__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: var(--deep-espresso);
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+    }
+    .cta-ribbon__text {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.9;
+      margin-bottom: 2.5rem;
+    }
+    .cta-ribbon__buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ═══════════════════════════════════════
+       FOOTER  (identical to index)
+    ═══════════════════════════════════════ */
+    footer {
+      background: var(--deep-espresso);
+      padding: 5rem 5% 2.5rem;
+    }
+    .footer__grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer__brand-script {
+      font-family: var(--script);
+      font-size: 2.6rem;
+      color: var(--warm-champagne);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .footer__brand-tag {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(216, 194, 166, 0.5);
+      display: block;
+      margin-bottom: 1.4rem;
+    }
+    .footer__brand-text {
+      font-family: var(--sans);
+      font-size: 0.83rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(250, 246, 241, 0.55);
+      max-width: 280px;
+    }
+    .footer__col-title {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+    .footer__nav { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+    .footer__nav a {
+      font-family: var(--sans);
+      font-size: 0.83rem;
+      font-weight: 300;
+      color: rgba(250, 246, 241, 0.5);
+      transition: color 0.3s ease;
+    }
+    .footer__nav a:hover { color: var(--warm-champagne); }
+    .footer__bottom {
+      max-width: var(--max);
+      margin: 2.5rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .footer__copy {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: rgba(250, 246, 241, 0.28);
+    }
+    .footer__hearts {
+      font-family: var(--script);
+      font-size: 1.3rem;
+      color: var(--petal-blush);
+      opacity: 0.45;
+    }
+
+    /* ═══════════════════════════════════════
+       KEYFRAMES
+    ═══════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 1000px) {
+      .values__grid { grid-template-columns: repeat(2, 1fr); }
+      .stats__inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+      .stat-item:nth-child(3),
+      .stat-item:nth-child(4) { border-top: 1px solid rgba(239,214,210,0.08); }
+      .stat-item:nth-child(4) { border-right: none; }
+    }
+
+    @media (max-width: 900px) {
+      .story__inner { grid-template-columns: 1fr; gap: 4rem; }
+      .story__image { position: static; max-width: 460px; margin: 0 auto; width: 100%; }
+      .story__badge { bottom: -1.4rem; right: -0.6rem; }
+      .team__grid { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; }
+      .footer__grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+      .footer__brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .values__grid { grid-template-columns: 1fr; }
+      .stats__inner { grid-template-columns: repeat(2, 1fr); }
+      .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav">
-            <div><strong>Vow Makers</strong></div>
-            <div>
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-            </div>
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Vow Makers home">
+      <span class="nav-logo-script">Vow Makers</span>
+      <span class="nav-logo-tagline">Smoky Mountain Weddings</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="resources.html">Resources</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="contact.html">Book a Consultation</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════════════ -->
+  <header class="page-hero" aria-label="About page header">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__botanical" aria-hidden="true"></div>
+    <div class="page-hero__vignette" aria-hidden="true"></div>
+    <div class="page-hero__line" aria-hidden="true"></div>
+
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Sevier County, Tennessee &nbsp;·&nbsp; A Family Business Built on Love</p>
+      <h1 class="page-hero__script">Our Story</h1>
+      <div class="page-hero__divider" aria-hidden="true"></div>
+      <p class="page-hero__sub">Two people. Twenty-seven years. One shared calling — to make your wedding day as beautiful as the vow you're making.</p>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       THE STORY  (expanded about section)
+  ═══════════════════════════════════════ -->
+  <section class="story" id="story" aria-labelledby="story-headline">
+    <div class="story__inner">
+
+      <!-- Sticky photo -->
+      <div class="story__image reveal--left">
+        <div class="story__frame">
+          <!--
+            PHOTO TIP: Drop your couple photo in here.
+            <img src="images/zach-and-[name].jpg" alt="Zach and [Name], Vow Makers" />
+          -->
+          <div class="story__placeholder" aria-hidden="true">
+            <span>Vow Makers</span>
+            <span>Your photo here</span>
+          </div>
         </div>
-    </header>
+        <div class="story__badge" aria-label="27 plus years of marriage">
+          <span class="story__badge-number">27+</span>
+          <span class="story__badge-label">Years of Marriage</span>
+        </div>
+      </div>
 
-    <!-- Small Hero -->
-    <section class="hero-small">
-        <h1>About Vow Makers</h1>
-    </section>
+      <!-- Copy -->
+      <div class="story__copy reveal--right">
+        <span class="section-eyebrow">How It All Began</span>
+        <h2 class="section-headline" id="story-headline">
+          We Know What It Feels Like<br><em>to Say "I Do."</em>
+        </h2>
+        <span class="story__script-bridge">Because we've said it — and meant it every day since.</span>
+        <div class="section-divider"></div>
 
-    <div class="content">
+        <p class="body-text">
+          We're Zach and
+          <!-- FILL IN: replace [Your Name] with the correct name -->
+          [Your Name], and together we've built something that started with a simple belief:
+          every couple deserves a wedding team that genuinely cares. Not just about the logistics —
+          but about the meaning behind every moment.
+        </p>
 
-        <div class="section">
-            <h2>We Don’t Just Perform Weddings.<br>We Help You Begin a Marriage.</h2>
-            <p style="font-size:1.2rem; max-width:800px; margin:0 auto; text-align:center;">
-                A husband and wife team serving couples across the Smoky Mountains of East Tennessee — bringing faith, love, experience, and artistry to every celebration.
-            </p>
+        <p class="body-text">
+          After <strong>more than 27 years of marriage</strong>, we understand what it takes to build a life
+          together. We know the weight a vow carries, the joy of a first dance, the way a well-placed
+          flower can make a room feel sacred. That lived experience is what we bring to every wedding
+          we're honored to be part of.
+        </p>
+
+        <div class="story__pull-quote">
+          <p>"We didn't start Vow Makers to be vendors. We started it because we wanted couples
+          to have what we have — a team standing beside them that actually believes in their love story."</p>
+          <cite>— Zach &amp; Bridgett, Vow Makers</cite>
         </div>
 
-        <div class="section">
-            <h2>Meet Your Vow Makers</h2>
-            <div class="team">
-                <div class="team-member">
-                    <h3>Ordained Navy Chaplain — Officiant & Musician</h3>
-                    <p>As a retired U.S. Navy chaplain with decades of service, he brings depth, sincerity, and pastoral care to every ceremony. He is also an accomplished musician and DJ who curates the emotional soundtrack of your day.</p>
-                </div>
-                <div class="team-member">
-                    <h3>Master Organizer, Designer & Craftsperson</h3>
-                    <p>She is the detail-oriented heart of Vow Makers — a gifted wedding coordinator, master tailor, floral designer, and custom craftsperson. Her handmade touches, especially our signature custom wood last name pieces, make every wedding special.</p>
-                </div>
-            </div>
-        </div>
+        <p class="body-text">
+          We're based right here in <strong>Sevier County, Tennessee</strong>, in the shadow of the Great Smoky
+          Mountains — one of the most breathtaking places on earth to pledge your forever. And we've watched
+          again and again as the mountains have a way of making everything feel more real, more sacred,
+          more <em>yours</em>.
+        </p>
 
-        <div class="section">
-            <h2>27+ Years of Real Marriage.<br>One Unified Team.</h2>
-            <p style="text-align:center; max-width:900px; margin:0 auto;">
-                We built Vow Makers around one simple belief: your wedding day deserves people who have actually lived what marriage is. With over 27 years of marriage between us, we bring genuine understanding, faith, and care to every detail.
-            </p>
-        </div>
+        <p class="body-text">
+          Vow Makers handles it all: the ceremony and vows, the music and DJ, the florals, and the
+          planning. That means you have one trusted team, one consistent vision, and one less thing
+          to worry about on the most important day of your life.
+        </p>
 
-        <div class="section">
-            <h2>Our Promise to You</h2>
-            <p style="text-align:center; max-width:800px; margin:0 auto;">
-                What makes us different is that everything we do is grounded in genuine care. Together, we offer a unified vision no single vendor can match. We are honored to help you tell your story in the beautiful Smoky Mountains.
-            </p>
-        </div>
+        <span class="story__signature">
+          With love, Zach &amp; Bridgett
+        </span>
 
-        <div class="cta">
-            <h2>Your Vows Matter. Your Story Matters.</h2>
-            <p style="max-width:700px; margin:0 auto 20px;">
-                We’d be honored to be part of your Smoky Mountain wedding.
-            </p>
-            <a href="contact.html" class="btn">Book Your Free Consultation</a>
+        <a href="services.html" class="btn--primary">See What We Offer</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       VALUES
+  ═══════════════════════════════════════ -->
+  <section class="values" id="values" aria-labelledby="values-headline">
+    <div class="values__header reveal">
+      <span class="section-eyebrow">What We Believe</span>
+      <h2 class="section-headline" id="values-headline">The Heart Behind<br><em>Everything We Do</em></h2>
+      <div class="section-divider section-divider--center"></div>
+      <p style="font-family:var(--serif); font-style:italic; font-size:1.1rem; color:var(--cocoa-taupe); font-weight:300; max-width:560px; margin:0 auto; line-height:1.8;">
+        We are marriage-centered, not trend-centered. These are the convictions that guide every wedding we're part of.
+      </p>
+    </div>
+
+    <div class="values__grid">
+
+      <div class="value-card reveal" style="transition-delay:0s">
+        <div class="value-card__icon">
+          <!-- Heart -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
+        <h3 class="value-card__title">The Vow is Everything</h3>
+        <p class="value-card__text">Trends come and go. The promise you make to each other is what lasts. We keep that at the center of everything we plan and everything we say.</p>
+      </div>
+
+      <div class="value-card reveal" style="transition-delay:0.1s">
+        <div class="value-card__icon">
+          <!-- Flower petals / sparkle -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M2 12h4M18 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3 class="value-card__title">Beauty in Every Detail</h3>
+        <p class="value-card__text">From the floral arrangements to the playlist transitions, nothing is an afterthought. We believe the small things add up to the memory of a lifetime.</p>
+      </div>
+
+      <div class="value-card reveal" style="transition-delay:0.2s">
+        <div class="value-card__icon">
+          <!-- Two people / togetherness -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="value-card__title">Your Day, Your Way</h3>
+        <p class="value-card__text">We don't have a formula. Every couple is different, and every wedding should feel like them — not like a template. We listen before we plan.</p>
+      </div>
+
+      <div class="value-card reveal" style="transition-delay:0.3s">
+        <div class="value-card__icon">
+          <!-- Mountain / anchor -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="3 20 12 4 21 20 3 20"/><line x1="3" y1="20" x2="21" y2="20"/></svg>
+        </div>
+        <h3 class="value-card__title">Calm Under Pressure</h3>
+        <p class="value-card__text">Wedding days don't always go to plan. We've seen it all, and we stay grounded so you can stay present. The best moments happen when you're not stressed about logistics.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       MEET THE TEAM
+  ═══════════════════════════════════════ -->
+  <section class="team" id="team" aria-labelledby="team-headline">
+    <div class="team__header reveal">
+      <span class="section-eyebrow">The People Behind the Promise</span>
+      <h2 class="section-headline" id="team-headline">Meet <em>the Team</em></h2>
+      <div class="section-divider section-divider--center"></div>
+      <p style="font-family:var(--serif); font-style:italic; font-size:1.1rem; color:var(--cocoa-taupe); font-weight:300; max-width:500px; margin:0 auto; line-height:1.8;">
+        A husband and wife who love the Smokies, love weddings, and love what they do.
+      </p>
+    </div>
+
+    <div class="team__grid">
+
+      <!-- Zach -->
+      <div class="team-card team-card--zach reveal--left">
+        <div class="team-card__photo">
+          <!--
+            PHOTO TIP: <img src="images/zach.jpg" alt="Zach, Officiant & DJ" />
+          -->
+          <div class="team-card__photo-placeholder" aria-hidden="true">
+            <span>Zach</span>
+            <span>Photo coming soon</span>
+          </div>
+        </div>
+        <p class="team-card__role">Officiant &amp; DJ · Co-Founder</p>
+        <h3 class="team-card__name">Zach</h3>
+        <div class="team-card__divider"></div>
+        <p class="team-card__bio">
+          Zach has been making people feel at ease his entire life — and that's exactly what you
+          want in an officiant and a DJ. Whether he's crafting the ceremony that tells your specific
+          love story or cueing the perfect song at the perfect moment, his instinct for genuine connection
+          shows in everything he does.
+        </p>
+        <p class="team-card__bio">
+          A lifelong East Tennessee native, Zach knows the Smoky Mountains the way most people know
+          their own backyard. He brings warmth, humor, and a calm steadiness to every wedding he's part of.
+        </p>
+        <p class="team-card__quote">"I still get emotional at ceremonies. That's not a problem — that's a promise that this job still means something to me."</p>
+      </div>
+
+      <!-- Partner -->
+      <!--
+        PERSONALIZATION: Replace both instances of [Your Name] below with the correct name.
+        Update the role, bio, and quote to match the real details.
+      -->
+      <div class="team-card team-card--partner reveal--right">
+        <div class="team-card__photo">
+          <!--
+            PHOTO TIP: <img src="images/[name].jpg" alt="[Name], Florals & Planning" />
+          -->
+          <div class="team-card__photo-placeholder" aria-hidden="true">
+            <span>[Your Name]</span>
+            <span>Photo coming soon</span>
+          </div>
+        </div>
+        <p class="team-card__role">Florals &amp; Planning · Co-Founder</p>
+        <h3 class="team-card__name">[Your Name]</h3>
+        <div class="team-card__divider"></div>
+        <p class="team-card__bio">
+          <!-- FILL IN: Replace this with real bio content -->
+          With an eye for beauty and a gift for staying organized when everything else feels chaotic,
+          [Your Name] brings the floral vision and planning backbone that makes Vow Makers a truly
+          full-service team. She understands what brides are looking for — because she's been one,
+          and she's helped hundreds of others step into their own dream day.
+        </p>
+        <p class="team-card__bio">
+          From the first consultation to the final petal arrangement, she's thinking about how
+          every element tells your story. Her florals don't just look beautiful — they feel right.
+        </p>
+        <p class="team-card__quote">"There's a moment when a bride sees her florals for the first time. I live for that moment."</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       STATS BAND
+  ═══════════════════════════════════════ -->
+  <div class="stats" aria-label="By the numbers">
+    <div class="stats__inner">
+
+      <div class="stat-item reveal" style="transition-delay:0s">
+        <span class="stat-item__number">27+</span>
+        <span class="stat-item__label">Years of Marriage</span>
+        <span class="stat-item__sub">and still going strong</span>
+      </div>
+
+      <div class="stat-item reveal" style="transition-delay:0.1s">
+        <span class="stat-item__number">4</span>
+        <span class="stat-item__label">Services in One Team</span>
+        <span class="stat-item__sub">officiant, DJ, florals, planning</span>
+      </div>
+
+      <div class="stat-item reveal" style="transition-delay:0.2s">
+        <span class="stat-item__number">1</span>
+        <span class="stat-item__label">Region We Call Home</span>
+        <span class="stat-item__sub">the Smoky Mountains</span>
+      </div>
+
+      <div class="stat-item reveal" style="transition-delay:0.3s">
+        <span class="stat-item__number">∞</span>
+        <span class="stat-item__label">Details We Care About</span>
+        <span class="stat-item__sub">none of them are too small</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       CTA RIBBON
+  ═══════════════════════════════════════ -->
+  <section class="cta-ribbon" aria-labelledby="cta-headline">
+    <div class="cta-ribbon__watermark" aria-hidden="true">
+      <span>Let's Begin</span>
+    </div>
+    <div class="cta-ribbon__content reveal">
+      <span class="cta-ribbon__script">Ready to start your story?</span>
+      <h2 class="cta-ribbon__headline" id="cta-headline">
+        Let's Make Your Wedding<br>One for the Mountains to Remember
+      </h2>
+      <p class="cta-ribbon__text">
+        Whether you're just starting to plan or you know exactly what you want, we'd love to sit down,
+        hear your story, and talk about how Vow Makers can be part of it.
+      </p>
+      <div class="cta-ribbon__buttons">
+        <a href="contact.html"  class="btn--primary">Book a Free Consultation</a>
+        <a href="services.html" class="btn--soft">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <span class="footer__brand-script">Vow Makers</span>
+        <span class="footer__brand-tag">Smoky Mountain Weddings</span>
+        <p class="footer__brand-text">
+          A husband-and-wife wedding team serving the Smoky Mountain region
+          of East Tennessee. Officiant · Music · Florals · Planning.
+        </p>
+      </div>
+
+      <div>
+        <span class="footer__col-title">Navigate</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer__col-title">Connect</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="contact.html">Book a Consultation</a></li>
+        </ul>
+      </div>
 
     </div>
 
-    <footer>
-        <p><strong>Vow Makers</strong> — Sevierville, Tennessee</p>
-        <p>Serving Sevierville • Gatlinburg • Pigeon Forge • and the greater Smoky Mountain region</p>
-        <p>© 2026 Vow Makers</p>
-    </footer>
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; 2026 Vow Makers &nbsp;·&nbsp; Sevier County, Tennessee &nbsp;·&nbsp; All rights reserved
+      </p>
+      <span class="footer__hearts" aria-hidden="true">&#9825; Made with love &#9825;</span>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script>
+    /* ─── Hamburger / mobile drawer ─── */
+    const hamburger = document.getElementById('hamburger');
+    const navDrawer = document.getElementById('nav-drawer');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navDrawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navDrawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navDrawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ─── Scroll reveal (IntersectionObserver) ─── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal--left, .reveal--right').forEach(el => {
+      io.observe(el);
+    });
+  </script>
 
 </body>
 </html>
