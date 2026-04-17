@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | Vow Makers — Smoky Mountain Wedding Guides &amp; Inspiration</title>
+  <meta name="description" content="Wedding guides, honeymoon inspiration, and Smoky Mountain travel tips from Vow Makers — your local husband-and-wife wedding team in Sevier County, Tennessee." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Resources | Vow Makers — Smoky Mountain Wedding Guides" />
+  <meta property="og:description" content="Wedding guides, honeymoon inspiration, and Smoky Mountain travel tips from the Vow Makers team in Sevier County, Tennessee." />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- Geo targeting -->
+  <meta name="geo.region"    content="US-TN" />
+  <meta name="geo.placename" content="Sevier County, Tennessee" />
+  <meta name="ICBM"          content="35.8682, -83.5615" />
+  <meta name="geo.position"  content="35.8682;-83.5615" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════
+       BRAND TOKENS
+    ═══════════════════════════════════════ */
+    :root {
+      --petal-blush:    #EFD6D2;
+      --dusty-mauve:    #B79AA3;
+      --warm-champagne: #D8C2A6;
+      --soft-ivory:     #FAF6F1;
+      --cocoa-taupe:    #6B5B57;
+      --deep-espresso:  #4B3F3C;
+      --veil-white:     #FFFFFF;
+      --pale-linen:     #F3ECE6;
+
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --script: 'Great Vibes', cursive;
+      --sans:   'Lato', sans-serif;
+
+      --nav-h: 76px;
+      --ease:  cubic-bezier(0.4, 0, 0.2, 1);
+      --max:   1100px;
+    }
+
+    /* ═══════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--soft-ivory);
+      color: var(--cocoa-taupe);
+      font-family: var(--sans);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ═══════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 900;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      background: rgba(250, 246, 241, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 24px rgba(75, 63, 60, 0.09);
+    }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1; gap: 1px; }
+    .nav-logo-script {
+      font-family: var(--script);
+      font-size: 2rem;
+      color: var(--cocoa-taupe);
+      letter-spacing: 0.01em;
+    }
+    .nav-logo-tagline {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--dusty-mauve);
+      transition: width 0.35s ease;
+    }
+    .nav-links a:hover { color: var(--deep-espresso); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a.active { color: var(--dusty-mauve); }
+    .nav-links a.active::after { width: 100%; }
+    .nav-cta {
+      display: inline-block;
+      padding: 0.55rem 1.5rem;
+      border: 1px solid var(--cocoa-taupe);
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe) !important;
+      border-radius: 1px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .nav-cta:hover { background: var(--cocoa-taupe); color: var(--soft-ivory) !important; }
+    .nav-cta::after { display: none !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 1.5px;
+      background: var(--cocoa-taupe);
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      background: rgba(250, 246, 241, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--petal-blush);
+      padding: 1.8rem 6%;
+      z-index: 850;
+      flex-direction: column;
+      gap: 0;
+    }
+    .nav-drawer.open { display: flex; }
+    .nav-drawer a {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--pale-linen);
+      transition: color 0.25s ease;
+    }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer a:hover { color: var(--dusty-mauve); }
+
+    /* ═══════════════════════════════════════
+       PAGE HERO
+    ═══════════════════════════════════════ */
+    .page-hero {
+      position: relative;
+      min-height: 52vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: var(--nav-h);
+    }
+    .page-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(
+          155deg,
+          rgba(75, 63, 60, 0.84) 0%,
+          rgba(107, 91, 87, 0.52) 50%,
+          rgba(183, 154, 163, 0.36) 75%,
+          rgba(75, 63, 60, 0.82) 100%
+        ),
+        radial-gradient(ellipse at 45% 50%, #856e69 0%, #4B3F3C 55%, #2d2220 100%);
+      background-size: cover;
+      background-position: center;
+    }
+    .page-hero__botanical {
+      position: absolute; inset: 0; z-index: 1;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23EFD6D2' stroke-width='0.8'%3E%3Cellipse cx='260' cy='260' rx='220' ry='100'/%3E%3Cellipse cx='260' cy='260' rx='100' ry='220'/%3E%3Cellipse cx='260' cy='260' rx='170' ry='170'/%3E%3Cpath d='M260,40 C290,110 290,200 260,260 C230,200 230,110 260,40Z'/%3E%3Cpath d='M260,480 C290,410 290,320 260,260 C230,320 230,410 260,480Z'/%3E%3Cpath d='M40,260 C110,290 200,290 260,260 C200,230 110,230 40,260Z'/%3E%3Cpath d='M480,260 C410,290 320,290 260,260 C320,230 410,230 480,260Z'/%3E%3Ccircle cx='260' cy='260' r='12'/%3E%3Ccircle cx='260' cy='260' r='45'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 340px;
+      pointer-events: none;
+    }
+    .page-hero__vignette {
+      position: absolute; inset: 0; z-index: 2;
+      background: radial-gradient(ellipse at 50% 45%, transparent 30%, rgba(30, 22, 20, 0.52) 100%);
+      pointer-events: none;
+    }
+    .page-hero__line {
+      position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
+      height: 2px;
+      background: linear-gradient(to right, transparent 0%, var(--warm-champagne) 30%, var(--petal-blush) 70%, transparent 100%);
+      opacity: 0.5;
+    }
+    .page-hero__content {
+      position: relative; z-index: 4;
+      text-align: center;
+      padding: 2rem 24px 3rem;
+      max-width: 740px; width: 100%;
+    }
+    .page-hero__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.66rem; font-weight: 300;
+      letter-spacing: 0.4em; text-transform: uppercase;
+      color: var(--warm-champagne);
+      margin-bottom: 1.4rem;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.2s forwards;
+    }
+    .page-hero__script {
+      font-family: var(--script);
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      color: var(--veil-white);
+      line-height: 1; margin-bottom: 1rem;
+      text-shadow: 0 4px 40px rgba(75, 63, 60, 0.4);
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.45s forwards;
+    }
+    .page-hero__divider {
+      width: 54px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne), transparent);
+      margin: 0 auto 1.4rem;
+      opacity: 0; animation: fadeIn 0.9s var(--ease) 0.7s forwards;
+    }
+    .page-hero__sub {
+      font-family: var(--serif);
+      font-style: italic; font-weight: 300;
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      color: rgba(250, 246, 241, 0.78);
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.85s forwards;
+      line-height: 1.65;
+    }
+
+    /* ═══════════════════════════════════════
+       RESOURCES INTRO
+    ═══════════════════════════════════════ */
+    .resources-intro {
+      background: var(--pale-linen);
+      padding: 5rem 5%;
+      text-align: center;
+      position: relative;
+    }
+    .resources-intro::before,
+    .resources-intro::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0; height: 2px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne) 35%, var(--petal-blush) 65%, transparent);
+    }
+    .resources-intro::before { top: 0; }
+    .resources-intro::after  { bottom: 0; }
+
+    .resources-intro__inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .resources-intro__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+      display: block;
+      margin-bottom: 0.9rem;
+    }
+    .resources-intro__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      color: var(--deep-espresso);
+      line-height: 1.18;
+      margin-bottom: 1.6rem;
+    }
+    .resources-intro__headline em { font-style: italic; color: var(--dusty-mauve); }
+    .resources-intro__text {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.95;
+    }
+
+    /* ═══════════════════════════════════════
+       BLOG FEED
+       ─────────────────────────────────────
+       TO ADD A NEW POST: copy one .post block
+       and paste it ABOVE the existing .post
+       blocks inside .blog-feed__posts.
+       Most recent post always goes first.
+    ═══════════════════════════════════════ */
+    .blog-feed {
+      padding: 7rem 5%;
+      background: var(--soft-ivory);
+    }
+    .blog-feed__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    /* Section header */
+    .blog-feed__header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 4rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--pale-linen);
+      flex-wrap: wrap;
+    }
+    .blog-feed__title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      color: var(--deep-espresso);
+    }
+    .blog-feed__title em { font-style: italic; color: var(--dusty-mauve); }
+    .blog-feed__count {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(107, 91, 87, 0.4);
+    }
+
+    /* Individual post */
+    .post {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 5rem;
+      align-items: start;
+      padding-bottom: 5rem;
+      margin-bottom: 5rem;
+      border-bottom: 1px solid var(--pale-linen);
+    }
+    .post:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    /* Post meta sidebar */
+    .post__meta {
+      position: sticky;
+      top: calc(var(--nav-h) + 3rem);
+    }
+    .post__category {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--veil-white);
+      background: var(--dusty-mauve);
+      padding: 0.3rem 0.9rem;
+      margin-bottom: 1.4rem;
+    }
+    .post__date {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 300;
+      letter-spacing: 0.14em;
+      color: rgba(107, 91, 87, 0.5);
+      display: block;
+      margin-bottom: 1.2rem;
+    }
+    .post__title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+      color: var(--deep-espresso);
+      line-height: 1.22;
+      margin-bottom: 1rem;
+    }
+    .post__title em { font-style: italic; color: var(--dusty-mauve); }
+    .post__excerpt {
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.85;
+      margin-bottom: 1.8rem;
+    }
+    .post__author {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+    }
+    .post__author-dot {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--petal-blush);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .post__author-dot svg {
+      width: 13px; height: 13px;
+      stroke: var(--cocoa-taupe); fill: none; stroke-width: 1.5;
+    }
+    .post__author-name {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+    }
+
+    /* Post body */
+    .post__body { padding-top: 0.25rem; }
+
+    .post__body h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: var(--deep-espresso);
+      line-height: 1.25;
+      margin: 2rem 0 0.8rem;
+    }
+    .post__body h3:first-child { margin-top: 0; }
+
+    .post__body p {
+      font-family: var(--sans);
+      font-size: 0.93rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.95;
+      margin-bottom: 1.3rem;
+    }
+    .post__body p:last-child { margin-bottom: 0; }
+    .post__body strong { font-weight: 700; color: var(--deep-espresso); }
+    .post__body em { font-style: italic; }
+
+    /* Numbered list items (styled for top-10 posts) */
+    .post__list {
+      list-style: none;
+      margin: 0 0 1.5rem;
+    }
+    .post__list-item {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 1.2rem;
+      align-items: start;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid var(--pale-linen);
+    }
+    .post__list-item:first-child { border-top: 1px solid var(--pale-linen); }
+    .post__list-num {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--petal-blush);
+      line-height: 1;
+      padding-top: 0.1rem;
+    }
+    .post__list-content {}
+    .post__list-name {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.15rem;
+      color: var(--deep-espresso);
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+      display: block;
+    }
+    .post__list-desc {
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.75;
+    }
+
+    /* Pull quote inside post */
+    .post__pull-quote {
+      border-left: 2px solid var(--warm-champagne);
+      padding: 0.6rem 0 0.6rem 1.8rem;
+      margin: 2rem 0;
+    }
+    .post__pull-quote p {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: var(--deep-espresso);
+      line-height: 1.65;
+    }
+
+    /* ═══════════════════════════════════════
+       COMING SOON BAND
+    ═══════════════════════════════════════ */
+    .coming-soon {
+      background: var(--deep-espresso);
+      padding: 6rem 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .coming-soon__watermark {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none; user-select: none;
+    }
+    .coming-soon__watermark span {
+      font-family: var(--script);
+      font-size: clamp(6rem, 18vw, 16rem);
+      color: rgba(239, 214, 210, 0.04);
+      line-height: 1; white-space: nowrap;
+    }
+    .coming-soon__inner {
+      position: relative;
+      z-index: 1;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+    .coming-soon__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+      opacity: 0.6;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .coming-soon__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: var(--veil-white);
+      line-height: 1.2;
+      margin-bottom: 1.4rem;
+    }
+    .coming-soon__headline em { font-style: italic; color: var(--petal-blush); }
+    .coming-soon__text {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgba(250, 246, 241, 0.55);
+      line-height: 1.9;
+      margin-bottom: 3rem;
+    }
+    .coming-soon__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      text-align: left;
+    }
+    .coming-soon__card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(239, 214, 210, 0.1);
+      padding: 2rem 1.8rem;
+    }
+    .coming-soon__card-icon {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(239, 214, 210, 0.08);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.2rem;
+    }
+    .coming-soon__card-icon svg {
+      width: 18px; height: 18px;
+      stroke: var(--dusty-mauve); fill: none; stroke-width: 1.4;
+    }
+    .coming-soon__card-title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.15rem;
+      color: var(--warm-champagne);
+      margin-bottom: 0.5rem;
+    }
+    .coming-soon__card-text {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgba(250, 246, 241, 0.4);
+      line-height: 1.8;
+    }
+
+    /* ═══════════════════════════════════════
+       CTA RIBBON
+    ═══════════════════════════════════════ */
+    .cta-ribbon {
+      background: var(--petal-blush);
+      padding: 6rem 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-ribbon__watermark {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none; user-select: none; overflow: hidden;
+    }
+    .cta-ribbon__watermark span {
+      font-family: var(--script);
+      font-size: clamp(8rem, 20vw, 18rem);
+      color: rgba(107, 91, 87, 0.07);
+      line-height: 1; white-space: nowrap;
+    }
+    .cta-ribbon__content {
+      position: relative; z-index: 1;
+      max-width: 580px; margin: 0 auto;
+    }
+    .cta-ribbon__script {
+      font-family: var(--script);
+      font-size: 2.4rem;
+      color: var(--cocoa-taupe);
+      display: block; margin-bottom: 0.4rem; opacity: 0.8;
+    }
+    .cta-ribbon__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      color: var(--deep-espresso);
+      line-height: 1.2; margin-bottom: 1.2rem;
+    }
+    .cta-ribbon__text {
+      font-family: var(--sans);
+      font-size: 0.9rem; font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.9; margin-bottom: 2.2rem;
+    }
+    .btn--primary {
+      display: inline-block;
+      background: var(--cocoa-taupe);
+      color: var(--soft-ivory);
+      border: 1px solid var(--cocoa-taupe);
+      padding: 1rem 2.6rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--primary:hover { background: var(--deep-espresso); border-color: var(--deep-espresso); transform: translateY(-2px); }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ */
+    footer { background: var(--deep-espresso); padding: 5rem 5% 2.5rem; }
+    .footer__grid {
+      max-width: var(--max); margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem; padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer__brand-script {
+      font-family: var(--script); font-size: 2.6rem;
+      color: var(--warm-champagne); line-height: 1;
+      display: block; margin-bottom: 0.25rem;
+    }
+    .footer__brand-tag {
+      font-family: var(--sans); font-size: 0.58rem;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: rgba(216, 194, 166, 0.5); display: block; margin-bottom: 1.4rem;
+    }
+    .footer__brand-text {
+      font-family: var(--sans); font-size: 0.83rem;
+      font-weight: 300; line-height: 1.8;
+      color: rgba(250, 246, 241, 0.55); max-width: 280px;
+    }
+    .footer__col-title {
+      font-family: var(--sans); font-size: 0.6rem;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: var(--warm-champagne); display: block; margin-bottom: 1.5rem;
+    }
+    .footer__nav { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+    .footer__nav a {
+      font-family: var(--sans); font-size: 0.83rem;
+      font-weight: 300; color: rgba(250, 246, 241, 0.5);
+      transition: color 0.3s ease;
+    }
+    .footer__nav a:hover { color: var(--warm-champagne); }
+    .footer__bottom {
+      max-width: var(--max); margin: 2.5rem auto 0;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 0.8rem;
+    }
+    .footer__copy { font-family: var(--sans); font-size: 0.72rem; color: rgba(250, 246, 241, 0.28); }
+    .footer__hearts { font-family: var(--script); font-size: 1.3rem; color: var(--petal-blush); opacity: 0.45; }
+
+    /* ═══════════════════════════════════════
+       KEYFRAMES & REVEAL
+    ═══════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .post { grid-template-columns: 1fr; gap: 2.5rem; }
+      .post__meta { position: static; }
+      .coming-soon__cards { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
+      .footer__grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+      .footer__brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .post__list-item { grid-template-columns: 32px 1fr; gap: 0.8rem; }
+      .post__list-num { font-size: 1.5rem; }
+      .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Vow Makers home">
+      <span class="nav-logo-script">Vow Makers</span>
+      <span class="nav-logo-tagline">Smoky Mountain Weddings</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="resources.html" class="active">Resources</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="resources.html">Resources</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="contact.html">Book a Consultation</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════════════ -->
+  <header class="page-hero" aria-label="Resources page header">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__botanical" aria-hidden="true"></div>
+    <div class="page-hero__vignette" aria-hidden="true"></div>
+    <div class="page-hero__line" aria-hidden="true"></div>
+
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Guides &nbsp;·&nbsp; Tips &nbsp;·&nbsp; Smoky Mountain Life</p>
+      <h1 class="page-hero__script">Resources</h1>
+      <div class="page-hero__divider" aria-hidden="true"></div>
+      <p class="page-hero__sub">Practical guides, local favorites, and honest advice from two people who have spent decades in the Smokies and at weddings.</p>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       INTRO
+  ═══════════════════════════════════════ -->
+  <div class="resources-intro reveal">
+    <div class="resources-intro__inner">
+      <span class="resources-intro__eyebrow">From Our Home to Yours</span>
+      <h2 class="resources-intro__headline">Everything We Wish<br><em>Someone Had Told Us.</em></h2>
+      <p class="resources-intro__text">
+        This is where we share what we know — the best trails, the real honeymoon spots, the wedding planning tips that actually matter, and the Smoky Mountain secrets that only locals know. More is on the way, including videos from Zach and Bridgett. Check back often.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       BLOG FEED
+       ─────────────────────────────────────
+       TO ADD A NEW POST:
+       Copy the entire .post block below,
+       paste it ABOVE this one, and update
+       the content. Most recent goes first.
+  ═══════════════════════════════════════ -->
+  <section class="blog-feed" aria-labelledby="feed-title">
+    <div class="blog-feed__inner">
+
+      <div class="blog-feed__header">
+        <h2 class="blog-feed__title" id="feed-title">Latest from <em>the Team</em></h2>
+        <span class="blog-feed__count">1 Post</span>
+      </div>
+
+      <div class="blog-feed__posts">
+
+        <!-- ═══════════════════════════════
+             POST — ADD NEW POSTS ABOVE THIS LINE
+             Copy this entire .post block to add more
+        ═══════════════════════════════════ -->
+
+        <!-- ─── POST 01 ─── -->
+        <article class="post reveal" aria-labelledby="post-01-title">
+
+          <!-- Meta sidebar -->
+          <div class="post__meta">
+            <span class="post__category">Honeymoon Guide</span>
+            <span class="post__date">April 2026</span>
+            <h2 class="post__title" id="post-01-title">
+              Top 10 Things to Do in the Smokies <em>as Newlyweds</em>
+            </h2>
+            <p class="post__excerpt">
+              You just said "I do" in one of the most beautiful places on earth. Now what? We've lived here for decades — here's how to spend those first days as husband and wife.
+            </p>
+            <div class="post__author">
+              <div class="post__author-dot">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="post__author-name">By Zach &amp; Bridgett</span>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="post__body">
+
+            <p>
+              The Smoky Mountains have a way of making everything feel a little more sacred. The air is different up here. The views stop you mid-sentence. And when you're newly married, surrounded by ancient ridgelines and rushing streams, the whole world seems to slow down just enough to let it all sink in.
+            </p>
+            <p>
+              We've been lucky enough to call Sevier County home for a long time, and we've watched hundreds of couples discover it for the first time. Here are our ten favorites — the places and experiences we genuinely recommend when couples ask us, "So what should we actually do?"
+            </p>
+
+            <div class="post__pull-quote">
+              <p>"The mountains have a way of reminding you that some things are worth slowing down for."</p>
+            </div>
+
+            <ol class="post__list" role="list">
+
+              <li class="post__list-item">
+                <span class="post__list-num">01</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Watch Sunrise from Clingmans Dome</span>
+                  <span class="post__list-desc">At 6,643 feet, this is the highest point in the entire Smokies — and the highest point on the Appalachian Trail. Set your alarm, drive up before first light, and watch the world turn gold from above the clouds. It is genuinely one of the most extraordinary views in America, and you'll have it almost entirely to yourselves that early in the morning.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">02</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Hike the Alum Cave Trail</span>
+                  <span class="post__list-desc">One of the park's most rewarding trails — about 4.4 miles round trip — passing through mossy forest, dramatic bluff formations, and out to sweeping mountain views. It's not too strenuous, it's genuinely beautiful the whole way, and there's something about completing a hike together in the first days of a marriage that feels exactly right.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">03</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Take Your Time Through Cades Cove</span>
+                  <span class="post__list-desc">This 11-mile scenic loop through an open valley is one of the most visited places in the park for good reason. Pull over often. Watch the deer move through the morning mist. Explore the historic homesteads and old churches that have been here since the 1800s. On Wednesday and Saturday mornings it's vehicle-free until 10 AM — bikes and walkers only. Special.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">04</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Stroll Downtown Gatlinburg</span>
+                  <span class="post__list-desc">Hand-pulled taffy, locally made fudge, craft shops stacked with mountain-made goods, and the kind of kitsch that somehow becomes deeply charming after dark when the lights come on. Walk the full strip together, stop for anything that catches your eye, and get the fudge. You'll regret it if you don't.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">05</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Raft the Pigeon River</span>
+                  <span class="post__list-desc">The Upper Pigeon offers fast, fun, Class III-IV rapids and the Lower Pigeon is more relaxed — both are guided, both are safe, and both are a blast. There's something about navigating whitewater together early in a marriage that makes for an excellent metaphor and an even better memory. Several reputable outfitters operate right off the highway.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">06</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Horseback Ride Through the Forest</span>
+                  <span class="post__list-desc">Multiple stables in the area offer guided trail rides through the national park, along creekbeds, and through stands of old hardwoods. You don't need experience — the horses know the trails better than anyone. It's peaceful, it's unhurried, and it's the kind of activity that creates an easy rhythm for conversation. A perfect afternoon.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">07</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Hike to Laurel Falls</span>
+                  <span class="post__list-desc">The most visited waterfall in the park — and there's a reason for that. The trail is paved and relatively easy at 2.6 miles round trip, which makes it accessible no matter your fitness level. The falls themselves are genuinely stunning, cascading in two tiers through old-growth hemlock forest. Go early in the morning to beat the crowds.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">08</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Drive the Roaring Fork Motor Nature Trail</span>
+                  <span class="post__list-desc">This narrow, winding one-way road winds through some of the most dramatic and untouched scenery in the entire park — rushing mountain streams, old-growth forest, mossy boulders, and hidden historic cabins still standing from the 1800s. It's closed in winter but worth every twist and turn when open. Slow down. Roll the windows down.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">09</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Stargaze from Above the Treeline</span>
+                  <span class="post__list-desc">Great Smoky Mountains National Park is a certified International Dark Sky Park — meaning on a clear night, the Milky Way is visible with the naked eye. Drive up to a high elevation pull-off after dark, bring a blanket, and give yourselves at least 20 minutes to let your eyes adjust. It has a way of making everything feel very small and very good at the same time.</span>
+                </div>
+              </li>
+
+              <li class="post__list-item">
+                <span class="post__list-num">10</span>
+                <div class="post__list-content">
+                  <span class="post__list-name">Spend an Evening at Dollywood</span>
+                  <span class="post__list-desc">Yes, really. We mean it. Dollywood is genuinely one of the best theme parks in the country — world-class coasters, incredible live music, craft demonstrations, and a quality that most parks simply don't bother with. After dark, the whole park lights up in a way that's quietly magical. Go at least once. You'll understand immediately why we recommended it.</span>
+                </div>
+              </li>
+
+            </ol>
+
+            <p>
+              The Smokies reward the people who slow down enough to actually be in them. As newlyweds, you've just made the most important promise of your lives — give yourselves the space to let that settle. These mountains are very good at helping with that.
+            </p>
+            <p>
+              <strong>From Zach &amp; Bridgett</strong> — We hope you love it up here as much as we do.
+            </p>
+
+          </div><!-- /.post__body -->
+
+        </article>
+        <!-- ─── END POST 01 ─── -->
+
+      </div><!-- /.blog-feed__posts -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       COMING SOON BAND
+  ═══════════════════════════════════════ -->
+  <div class="coming-soon reveal" aria-label="Coming soon">
+    <div class="coming-soon__watermark" aria-hidden="true">
+      <span>More Soon</span>
+    </div>
+    <div class="coming-soon__inner">
+      <span class="coming-soon__eyebrow">Coming Soon</span>
+      <h2 class="coming-soon__headline">More from <em>the Team</em></h2>
+      <p class="coming-soon__text">We're working on videos, wedding planning guides, real couple stories, and more. Check back often — we add new content regularly.</p>
+
+      <div class="coming-soon__cards">
+
+        <div class="coming-soon__card">
+          <div class="coming-soon__card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3 class="coming-soon__card-title">Videos</h3>
+          <p class="coming-soon__card-text">Real ceremony clips, behind-the-scenes footage, and advice from Zach &amp; Bridgett — straight from the Smokies.</p>
+        </div>
+
+        <div class="coming-soon__card">
+          <div class="coming-soon__card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="coming-soon__card-title">Wedding Planning Guides</h3>
+          <p class="coming-soon__card-text">Practical tips on timelines, vendor selection, budgeting, and all the details that actually matter on your wedding day.</p>
+        </div>
+
+        <div class="coming-soon__card">
+          <div class="coming-soon__card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="3 20 12 4 21 20 3 20"/></svg>
+          </div>
+          <h3 class="coming-soon__card-title">Local Vendor Spotlights</h3>
+          <p class="coming-soon__card-text">Honest recommendations for Sevier County photographers, caterers, venues, and other vendors we know and trust.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       CTA RIBBON
+  ═══════════════════════════════════════ -->
+  <section class="cta-ribbon reveal" aria-labelledby="cta-headline">
+    <div class="cta-ribbon__watermark" aria-hidden="true">
+      <span>Let's Begin</span>
+    </div>
+    <div class="cta-ribbon__content">
+      <span class="cta-ribbon__script">Ready to plan your day?</span>
+      <h2 class="cta-ribbon__headline" id="cta-headline">
+        We'd Love to Be Part<br>of Your Story
+      </h2>
+      <p class="cta-ribbon__text">
+        When you're ready to start talking about your wedding, we're here. One free conversation is all it takes to find out if we're the right fit.
+      </p>
+      <a href="contact.html" class="btn--primary">Book a Free Consultation</a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__brand-script">Vow Makers</span>
+        <span class="footer__brand-tag">Smoky Mountain Weddings</span>
+        <p class="footer__brand-text">A husband-and-wife wedding team serving the Smoky Mountain region of East Tennessee. Officiant · Music · Florals · Planning.</p>
+      </div>
+      <div>
+        <span class="footer__col-title">Navigate</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="footer__col-title">Connect</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="contact.html">Book a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Vow Makers &nbsp;·&nbsp; Sevier County, Tennessee &nbsp;·&nbsp; All rights reserved</p>
+      <span class="footer__hearts" aria-hidden="true">&#9825; Made with love &#9825;</span>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script>
+    /* ─── Hamburger / mobile drawer ─── */
+    const hamburger = document.getElementById('hamburger');
+    const navDrawer = document.getElementById('nav-drawer');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navDrawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navDrawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navDrawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ─── Scroll reveal ─── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
