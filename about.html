@@ -998,6 +998,29 @@
       .stats__inner { grid-template-columns: repeat(2, 1fr); }
       .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
     }
+
+    /* ─── Photo number badges ─── */
+    .photo-num {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 20;
+      background: rgba(0,0,0,0.72);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 700;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      line-height: 1;
+      letter-spacing: 0;
+    }
   </style>
 </head>
 <body>
@@ -1065,6 +1088,7 @@
       <!-- Sticky photo -->
       <div class="story__image reveal--left">
         <div class="story__frame">
+          <div class="photo-num">2</div>
           <!--
             PHOTO TIP: When ready, replace the placeholder div below with:
             <img src="FILENAME.jpg" alt="Zach and Bridgett, Vow Makers" />
@@ -1205,6 +1229,7 @@
       <!-- Zach -->
       <div class="team-card team-card--zach reveal--left">
         <div class="team-card__photo">
+          <div class="photo-num">3</div>
           <!--
             PHOTO: drop photo-zach.jpg into the folder, then replace this comment with:
             <img src="photo-zach.jpg" alt="Zach Speegle, Wedding Officiant & DJ — Vow Makers" />
@@ -1233,6 +1258,7 @@
       <!-- Bridgett -->
       <div class="team-card team-card--partner reveal--right">
         <div class="team-card__photo">
+          <div class="photo-num">4</div>
           <!--
             PHOTO: drop photo-bridgett.jpg into the folder, then replace this comment with:
             <img src="photo-bridgett.jpg" alt="Bridgett Speegle, Floral Designer & Wedding Planner — Vow Makers" />

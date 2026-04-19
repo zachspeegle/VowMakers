@@ -888,6 +888,29 @@
       .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
       .hero__tagline { font-size: 1rem; }
     }
+
+    /* ─── Photo number badges ─── */
+    .photo-num {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 20;
+      background: rgba(0,0,0,0.72);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 700;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      line-height: 1;
+      letter-spacing: 0;
+    }
   </style>
 </head>
 <body>
@@ -1026,6 +1049,7 @@
       <!-- Image column -->
       <div class="about__image-wrap" id="about-img">
         <div class="about__frame">
+          <div class="photo-num">1</div>
           <img src="IMG_0340.JPG" alt="Zach and Bridgett, your Vow Makers wedding team" />
         </div>
         <div class="about__badge" aria-label="27 plus years of marriage">

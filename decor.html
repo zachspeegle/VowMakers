@@ -618,6 +618,29 @@
     }
 
     @media (max-width: 420px) { .masonry { columns: 1; } }
+
+    /* ─── Photo number badges ─── */
+    .photo-num {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 20;
+      background: rgba(0,0,0,0.72);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 700;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      line-height: 1;
+      letter-spacing: 0;
+    }
   </style>
 </head>
 <body>
@@ -696,6 +719,7 @@
         <!-- FLORALS ─── -->
         <div class="masonry-item visible" data-category="florals">
           <div class="masonry-item__badge">Florals</div>
+          <div class="photo-num">9</div>
           <!-- PHOTO (gallery-florals-bridal-bouquet.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-florals-bridal-bouquet.jpg" alt="Custom bridal bouquet with seasonal blooms by Bridgett Speegle, Vow Makers" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 3/4;">
@@ -726,6 +750,7 @@
 
         <div class="masonry-item visible" data-category="hair">
           <div class="masonry-item__badge">Hair &amp; Beauty</div>
+          <div class="photo-num">10</div>
           <!-- PHOTO (gallery-hair-bridal-updo.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-hair-bridal-updo.jpg" alt="Elegant bridal updo hairstyle for a Smoky Mountain wedding" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 4/5;">
@@ -748,6 +773,7 @@
 
         <div class="masonry-item visible" data-category="ceremony">
           <div class="masonry-item__badge">Ceremony Décor</div>
+          <div class="photo-num">11</div>
           <!-- PHOTO (gallery-ceremony-arch.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-ceremony-arch.jpg" alt="Floral ceremony arch by Bridgett Speegle at a Smoky Mountain wedding" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 2/3;">
@@ -770,6 +796,7 @@
 
         <div class="masonry-item visible" data-category="florals">
           <div class="masonry-item__badge">Florals</div>
+          <div class="photo-num">12</div>
           <!-- PHOTO (gallery-florals-boutonniere.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-florals-boutonniere.jpg" alt="Custom wedding boutonnière by Bridgett Speegle, Vow Makers" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 1/1;">
@@ -800,6 +827,7 @@
 
         <div class="masonry-item visible" data-category="reception">
           <div class="masonry-item__badge">Reception Details</div>
+          <div class="photo-num">13</div>
           <!-- PHOTO (gallery-reception-centerpiece.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-reception-centerpiece.jpg" alt="Wedding reception table centerpiece designed by Bridgett Speegle, Vow Makers" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 5/4;">
@@ -822,6 +850,7 @@
 
         <div class="masonry-item visible" data-category="hair">
           <div class="masonry-item__badge">Hair &amp; Beauty</div>
+          <div class="photo-num">14</div>
           <!-- PHOTO (gallery-hair-loose-waves.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-hair-loose-waves.jpg" alt="Soft loose wave bridal hairstyle for a Smoky Mountain wedding" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 3/4;">
@@ -844,6 +873,7 @@
 
         <div class="masonry-item visible" data-category="florals">
           <div class="masonry-item__badge">Florals</div>
+          <div class="photo-num">15</div>
           <!-- PHOTO (gallery-florals-bridesmaid-bouquets.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-florals-bridesmaid-bouquets.jpg" alt="Bridesmaid bouquets by Bridgett Speegle, Vow Makers" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 4/5;">
@@ -874,6 +904,7 @@
 
         <div class="masonry-item visible" data-category="ceremony">
           <div class="masonry-item__badge">Ceremony Décor</div>
+          <div class="photo-num">16</div>
           <!-- PHOTO (gallery-ceremony-aisle-florals.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-ceremony-aisle-florals.jpg" alt="Wedding aisle floral arrangements by Bridgett Speegle, Vow Makers" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 3/4;">
@@ -896,6 +927,7 @@
 
         <div class="masonry-item visible" data-category="reception">
           <div class="masonry-item__badge">Reception Details</div>
+          <div class="photo-num">17</div>
           <!-- PHOTO (gallery-reception-sweetheart-table.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-reception-sweetheart-table.jpg" alt="Decorated sweetheart table at a Smoky Mountain wedding reception" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 4/3;">
@@ -918,6 +950,7 @@
 
         <div class="masonry-item visible" data-category="hair">
           <div class="masonry-item__badge">Hair &amp; Beauty</div>
+          <div class="photo-num">18</div>
           <!-- PHOTO (gallery-hair-half-up.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-hair-half-up.jpg" alt="Romantic half-up bridal hairstyle for a Smoky Mountain wedding" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 1/1;">
@@ -940,6 +973,7 @@
 
         <div class="masonry-item visible" data-category="florals">
           <div class="masonry-item__badge">Florals</div>
+          <div class="photo-num">19</div>
           <!-- PHOTO (gallery-florals-cascade-bouquet.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-florals-cascade-bouquet.jpg" alt="Cascading bridal bouquet by Bridgett Speegle, Vow Makers" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 2/3;">
@@ -970,6 +1004,7 @@
 
         <div class="masonry-item visible" data-category="ceremony">
           <div class="masonry-item__badge">Ceremony Décor</div>
+          <div class="photo-num">20</div>
           <!-- PHOTO (gallery-ceremony-floral-columns.jpg): replace this entire .tile-placeholder div with:
                <img class="tile-image" src="gallery-ceremony-floral-columns.jpg" alt="Tall floral column arrangements for a wedding ceremony by Bridgett Speegle, Vow Makers" /> -->
           <div class="tile-placeholder" style="aspect-ratio: 3/5;">

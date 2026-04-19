@@ -895,6 +895,29 @@
       .svc__included-grid { grid-template-columns: 1fr; }
       .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
     }
+
+    /* ─── Photo number badges ─── */
+    .photo-num {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 20;
+      background: rgba(0,0,0,0.72);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      font-weight: 700;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      padding: 0 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      line-height: 1;
+      letter-spacing: 0;
+    }
   </style>
 </head>
 <body>
@@ -1003,6 +1026,7 @@
 
       <div class="svc__visual">
         <div class="svc__photo">
+          <div class="photo-num">5</div>
           <img src="IMG_1251.jpeg" alt="Zach officiating a wedding ceremony in the Smoky Mountains" />
         </div>
         <div class="svc__number-badge" aria-hidden="true"><span>01</span></div>
@@ -1062,6 +1086,7 @@
           <div class="svc__number-badge" aria-hidden="true"><span>02</span></div>
         -->
         <div class="svc__panel svc__panel--dark">
+          <div class="photo-num">6</div>
           <div class="svc__panel-botanical" aria-hidden="true"></div>
           <div class="svc__panel-inner">
             <span class="svc__panel-number" aria-hidden="true">02</span>
@@ -1127,6 +1152,7 @@
           <div class="svc__number-badge" aria-hidden="true"><span>03</span></div>
         -->
         <div class="svc__panel svc__panel--blush">
+          <div class="photo-num">7</div>
           <div class="svc__panel-botanical" aria-hidden="true"></div>
           <div class="svc__panel-inner">
             <span class="svc__panel-number" aria-hidden="true">03</span>
@@ -1201,6 +1227,7 @@
           <div class="svc__number-badge" aria-hidden="true"><span>04</span></div>
         -->
         <div class="svc__panel svc__panel--champagne">
+          <div class="photo-num">8</div>
           <div class="svc__panel-botanical" aria-hidden="true"></div>
           <div class="svc__panel-inner">
             <span class="svc__panel-number" aria-hidden="true">04</span>
