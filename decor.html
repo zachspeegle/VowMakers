@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Vow Makers — Smoky Mountain Wedding Florals &amp; Styling</title>
+  <meta name="description" content="Browse our portfolio of custom wedding florals, bridal bouquets, ceremony arches, and hair styling by Vow Makers in Sevier County, Tennessee." />
+
+  <meta name="keywords" content="wedding florals Smoky Mountains, bridal bouquet Sevier County, wedding hair styling Gatlinburg, Pigeon Forge wedding flowers, Vow Makers gallery" />
+  <link rel="canonical" href="https://www.vowmakers.com/decor.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Gallery | Vow Makers — Smoky Mountain Wedding Florals &amp; Styling" />
+  <meta property="og:description" content="Browse our portfolio of custom wedding florals, bridal bouquets, ceremony arches, and hair styling in the Smoky Mountains." />
+  <meta property="og:url"         content="https://www.vowmakers.com/decor.html" />
+  <meta property="og:locale"      content="en_US" />
+  <meta property="og:site_name"   content="Vow Makers" />
+
+  <!-- Geo targeting -->
+  <meta name="geo.region"    content="US-TN" />
+  <meta name="geo.placename" content="Sevier County, Tennessee" />
+  <meta name="ICBM"          content="35.8682, -83.5615" />
+  <meta name="geo.position"  content="35.8682;-83.5615" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════
+       BRAND TOKENS
+    ═══════════════════════════════════════ */
+    :root {
+      --petal-blush:    #EFD6D2;
+      --dusty-mauve:    #B79AA3;
+      --warm-champagne: #D8C2A6;
+      --soft-ivory:     #FAF6F1;
+      --cocoa-taupe:    #6B5B57;
+      --deep-espresso:  #4B3F3C;
+      --veil-white:     #FFFFFF;
+      --pale-linen:     #F3ECE6;
+
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --script: 'Great Vibes', cursive;
+      --sans:   'Lato', sans-serif;
+
+      --nav-h: 76px;
+      --ease:  cubic-bezier(0.4, 0, 0.2, 1);
+      --max:   1200px;
+    }
+
+    /* ═══════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--soft-ivory);
+      color: var(--cocoa-taupe);
+      font-family: var(--sans);
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; }
+    img { display: block; max-width: 100%; width: 100%; }
+
+    /* ═══════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 900;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      background: rgba(250, 246, 241, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 24px rgba(75, 63, 60, 0.09);
+    }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1; gap: 1px; }
+    .nav-logo-script {
+      font-family: var(--script);
+      font-size: 2rem;
+      color: var(--cocoa-taupe);
+      letter-spacing: 0.01em;
+    }
+    .nav-logo-tagline {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      font-weight: 300;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--dusty-mauve);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--dusty-mauve);
+      transition: width 0.35s ease;
+    }
+    .nav-links a:hover { color: var(--deep-espresso); }
+    .nav-links a:hover::after,
+    .nav-links a.active::after { width: 100%; }
+    .nav-links a.active { color: var(--dusty-mauve); }
+    .nav-cta {
+      display: inline-block;
+      padding: 0.55rem 1.5rem;
+      border: 1px solid var(--cocoa-taupe);
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe) !important;
+      border-radius: 1px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .nav-cta:hover { background: var(--cocoa-taupe); color: var(--soft-ivory) !important; }
+    .nav-cta::after { display: none !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 1.5px;
+      background: var(--cocoa-taupe);
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      top: var(--nav-h);
+      left: 0; right: 0;
+      background: rgba(250, 246, 241, 0.98);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--petal-blush);
+      padding: 1.8rem 6%;
+      z-index: 850;
+      flex-direction: column;
+    }
+    .nav-drawer.open { display: flex; }
+    .nav-drawer a {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--pale-linen);
+      transition: color 0.25s ease;
+    }
+    .nav-drawer a:last-child { border-bottom: none; }
+    .nav-drawer a:hover { color: var(--dusty-mauve); }
+
+    /* ═══════════════════════════════════════
+       PAGE HERO
+    ═══════════════════════════════════════ */
+    .page-hero {
+      position: relative;
+      min-height: 52vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: var(--nav-h);
+    }
+    .page-hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(
+          155deg,
+          rgba(75, 63, 60, 0.84) 0%,
+          rgba(107, 91, 87, 0.58) 50%,
+          rgba(75, 63, 60, 0.82) 100%
+        ),
+        radial-gradient(ellipse at 40% 50%, #7d6a65 0%, #4B3F3C 55%, #2d2220 100%);
+      background-size: cover;
+      background-position: center;
+    }
+    .page-hero__botanical {
+      position: absolute; inset: 0; z-index: 1;
+      opacity: 0.055;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23EFD6D2' stroke-width='0.8'%3E%3Cellipse cx='260' cy='260' rx='220' ry='100'/%3E%3Cellipse cx='260' cy='260' rx='100' ry='220'/%3E%3Cellipse cx='260' cy='260' rx='170' ry='170'/%3E%3Cpath d='M260,40 C290,110 290,200 260,260 C230,200 230,110 260,40Z'/%3E%3Cpath d='M260,480 C290,410 290,320 260,260 C230,320 230,410 260,480Z'/%3E%3Cpath d='M40,260 C110,290 200,290 260,260 C200,230 110,230 40,260Z'/%3E%3Cpath d='M480,260 C410,290 320,290 260,260 C320,230 410,230 480,260Z'/%3E%3Ccircle cx='260' cy='260' r='12'/%3E%3Ccircle cx='260' cy='260' r='45'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 340px;
+      pointer-events: none;
+    }
+    .page-hero__vignette {
+      position: absolute; inset: 0; z-index: 2;
+      background: radial-gradient(ellipse at 50% 45%, transparent 30%, rgba(30, 22, 20, 0.52) 100%);
+      pointer-events: none;
+    }
+    .page-hero__line {
+      position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
+      height: 2px;
+      background: linear-gradient(to right, transparent 0%, var(--warm-champagne) 30%, var(--petal-blush) 70%, transparent 100%);
+      opacity: 0.5;
+    }
+    .page-hero__content {
+      position: relative; z-index: 4;
+      text-align: center;
+      padding: 2rem 24px 3.5rem;
+      max-width: 780px; width: 100%;
+    }
+    .page-hero__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.66rem; font-weight: 300;
+      letter-spacing: 0.4em; text-transform: uppercase;
+      color: var(--warm-champagne);
+      margin-bottom: 1.4rem;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.2s forwards;
+    }
+    .page-hero__script {
+      font-family: var(--script);
+      font-size: clamp(3.2rem, 7vw, 6rem);
+      color: var(--veil-white);
+      line-height: 1; margin-bottom: 1rem;
+      text-shadow: 0 4px 40px rgba(75, 63, 60, 0.4);
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.45s forwards;
+    }
+    .page-hero__divider {
+      width: 54px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--warm-champagne), transparent);
+      margin: 0 auto 1.4rem;
+      opacity: 0; animation: fadeIn 0.9s var(--ease) 0.7s forwards;
+    }
+    .page-hero__sub {
+      font-family: var(--serif);
+      font-style: italic; font-weight: 300;
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      color: rgba(250, 246, 241, 0.78);
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.85s forwards;
+      line-height: 1.65;
+    }
+
+    /* ═══════════════════════════════════════
+       FILTER BAR
+    ═══════════════════════════════════════ */
+    .filter-bar {
+      background: var(--pale-linen);
+      border-bottom: 1px solid var(--petal-blush);
+      padding: 0 5%;
+      position: sticky;
+      top: var(--nav-h);
+      z-index: 800;
+    }
+    .filter-bar__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .filter-bar__inner::-webkit-scrollbar { display: none; }
+    .filter-btn {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      padding: 1.1rem 1.6rem;
+      position: relative;
+      transition: color 0.3s ease;
+      opacity: 0.6;
+    }
+    .filter-btn::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--dusty-mauve);
+      transform: scaleX(0);
+      transition: transform 0.3s var(--ease);
+    }
+    .filter-btn:hover { opacity: 1; }
+    .filter-btn.active { color: var(--deep-espresso); opacity: 1; }
+    .filter-btn.active::after { transform: scaleX(1); }
+
+    /* ═══════════════════════════════════════
+       GALLERY SECTION
+    ═══════════════════════════════════════ */
+    .gallery-section {
+      padding: 5rem 5% 7rem;
+      background: var(--soft-ivory);
+    }
+    .gallery-section__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    /* Masonry columns */
+    .masonry {
+      columns: 4;
+      column-gap: 1rem;
+    }
+
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+      position: relative;
+      overflow: hidden;
+      background: var(--pale-linen);
+      cursor: pointer;
+      display: none;
+    }
+    .masonry-item.visible { display: block; }
+
+    /* Placeholder tile when no image is present */
+    .tile-placeholder {
+      width: 100%;
+      background: var(--pale-linen);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Real image tile */
+    .tile-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease);
+    }
+    .masonry-item:hover .tile-image { transform: scale(1.04); }
+
+    /* Placeholder botanical watermark */
+    .tile-placeholder__watermark {
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%236B5B57' stroke-width='0.7'%3E%3Cellipse cx='200' cy='200' rx='170' ry='78'/%3E%3Cellipse cx='200' cy='200' rx='78' ry='170'/%3E%3Cellipse cx='200' cy='200' rx='130' ry='130'/%3E%3Cpath d='M200,30 C225,90 225,155 200,200 C175,155 175,90 200,30Z'/%3E%3Cpath d='M200,370 C225,310 225,245 200,200 C175,245 175,310 200,370Z'/%3E%3Cpath d='M30,200 C90,225 155,225 200,200 C155,175 90,175 30,200Z'/%3E%3Cpath d='M370,200 C310,225 245,225 200,200 C245,175 310,175 370,200Z'/%3E%3Ccircle cx='200' cy='200' r='10'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 160px;
+      pointer-events: none;
+    }
+    .tile-placeholder__content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      width: 100%;
+    }
+    .tile-placeholder__icon svg {
+      width: 28px; height: 28px;
+      fill: none;
+      stroke: var(--dusty-mauve);
+      stroke-width: 1.2;
+      opacity: 0.6;
+    }
+    .tile-placeholder__label {
+      font-family: var(--script);
+      font-size: 1.5rem;
+      color: var(--cocoa-taupe);
+      opacity: 0.5;
+      line-height: 1;
+    }
+    .tile-placeholder__sub {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      opacity: 0.35;
+    }
+
+    /* Overlay on hover */
+    .masonry-item__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(75, 63, 60, 0.72) 0%, transparent 55%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.4rem;
+      z-index: 2;
+    }
+    .masonry-item:hover .masonry-item__overlay { opacity: 1; }
+    .masonry-item__overlay-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .masonry-item__title {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--veil-white);
+      line-height: 1.2;
+    }
+    .masonry-item__cat {
+      font-family: var(--sans);
+      font-size: 0.58rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--warm-champagne);
+      opacity: 0.85;
+    }
+
+    /* Category pill badge */
+    .masonry-item__badge {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 3;
+      background: rgba(250, 246, 241, 0.92);
+      padding: 0.25rem 0.7rem;
+      font-family: var(--sans);
+      font-size: 0.55rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cocoa-taupe);
+      border-radius: 1px;
+    }
+
+    /* ═══════════════════════════════════════
+       CTA RIBBON
+    ═══════════════════════════════════════ */
+    .cta-ribbon {
+      background: var(--petal-blush);
+      padding: 6rem 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-ribbon__watermark {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none; user-select: none; overflow: hidden;
+    }
+    .cta-ribbon__watermark span {
+      font-family: var(--script);
+      font-size: clamp(8rem, 20vw, 18rem);
+      color: rgba(107, 91, 87, 0.07);
+      line-height: 1; white-space: nowrap;
+    }
+    .cta-ribbon__content {
+      position: relative; z-index: 1;
+      max-width: 600px; margin: 0 auto;
+    }
+    .cta-ribbon__script {
+      font-family: var(--script);
+      font-size: 2.4rem;
+      color: var(--cocoa-taupe);
+      display: block; margin-bottom: 0.4rem; opacity: 0.8;
+    }
+    .cta-ribbon__headline {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      color: var(--deep-espresso);
+      line-height: 1.2; margin-bottom: 1.2rem;
+    }
+    .cta-ribbon__text {
+      font-family: var(--sans);
+      font-size: 0.92rem; font-weight: 300;
+      color: var(--cocoa-taupe);
+      line-height: 1.9; margin-bottom: 2.2rem;
+    }
+    .cta-ribbon__buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn--primary {
+      display: inline-block;
+      background: var(--cocoa-taupe);
+      color: var(--soft-ivory);
+      border: 1px solid var(--cocoa-taupe);
+      padding: 1rem 2.6rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, border-color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--primary:hover { background: var(--deep-espresso); border-color: var(--deep-espresso); transform: translateY(-2px); }
+
+    .btn--taupe-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--cocoa-taupe);
+      border: 1px solid var(--cocoa-taupe);
+      padding: 1rem 2.6rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border-radius: 1px;
+      transition: background 0.35s ease, color 0.35s ease, transform 0.3s ease;
+    }
+    .btn--taupe-outline:hover { background: var(--cocoa-taupe); color: var(--soft-ivory); transform: translateY(-2px); }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════ */
+    footer { background: var(--deep-espresso); padding: 5rem 5% 2.5rem; }
+    .footer__grid {
+      max-width: var(--max); margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 4rem; padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer__brand-script {
+      font-family: var(--script); font-size: 2.6rem;
+      color: var(--warm-champagne); line-height: 1;
+      display: block; margin-bottom: 0.25rem;
+    }
+    .footer__brand-tag {
+      font-family: var(--sans); font-size: 0.58rem;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: rgba(216, 194, 166, 0.5); display: block; margin-bottom: 1.4rem;
+    }
+    .footer__brand-text {
+      font-family: var(--sans); font-size: 0.83rem;
+      font-weight: 300; line-height: 1.8;
+      color: rgba(250, 246, 241, 0.55); max-width: 280px;
+    }
+    .footer__col-title {
+      font-family: var(--sans); font-size: 0.6rem;
+      letter-spacing: 0.32em; text-transform: uppercase;
+      color: var(--warm-champagne); display: block; margin-bottom: 1.5rem;
+    }
+    .footer__nav { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+    .footer__nav a {
+      font-family: var(--sans); font-size: 0.83rem;
+      font-weight: 300; color: rgba(250, 246, 241, 0.5);
+      transition: color 0.3s ease;
+    }
+    .footer__nav a:hover { color: var(--warm-champagne); }
+    .footer__bottom {
+      max-width: var(--max); margin: 2.5rem auto 0;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 0.8rem;
+    }
+    .footer__copy { font-family: var(--sans); font-size: 0.72rem; color: rgba(250, 246, 241, 0.28); }
+    .footer__hearts { font-family: var(--script); font-size: 1.3rem; color: var(--petal-blush); opacity: 0.45; }
+
+    /* ═══════════════════════════════════════
+       KEYFRAMES & REVEAL
+    ═══════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 1100px) { .masonry { columns: 3; } }
+    @media (max-width: 768px)  { .masonry { columns: 2; } }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 420px) { .masonry { columns: 1; } }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Vow Makers home">
+      <span class="nav-logo-script">Vow Makers</span>
+      <span class="nav-logo-tagline">Smoky Mountain Weddings</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="decor.html" class="active">Gallery</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="decor.html">Gallery</a>
+    <a href="resources.html">Resources</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html">Book a Consultation</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════════════ -->
+  <header class="page-hero" aria-label="Gallery page header">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__botanical" aria-hidden="true"></div>
+    <div class="page-hero__vignette" aria-hidden="true"></div>
+    <div class="page-hero__line" aria-hidden="true"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Our Work &nbsp;·&nbsp; Custom Designs for Your Day</p>
+      <h1 class="page-hero__script">Gallery</h1>
+      <div class="page-hero__divider" aria-hidden="true"></div>
+      <p class="page-hero__sub">A glimpse into the florals, styling, and details we craft for couples in the Smoky Mountains.</p>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       FILTER BAR
+  ═══════════════════════════════════════ -->
+  <div class="filter-bar" role="navigation" aria-label="Filter gallery">
+    <div class="filter-bar__inner">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="florals">Florals</button>
+      <button class="filter-btn" data-filter="hair">Hair &amp; Beauty</button>
+      <button class="filter-btn" data-filter="ceremony">Ceremony Décor</button>
+      <button class="filter-btn" data-filter="reception">Reception Details</button>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════ -->
+  <section class="gallery-section" aria-label="Gallery">
+    <div class="gallery-section__inner">
+      <div class="masonry" id="masonry-grid">
+
+        <!-- FLORALS ─── -->
+        <div class="masonry-item visible" data-category="florals">
+          <div class="masonry-item__badge">Florals</div>
+          <div class="tile-placeholder" style="aspect-ratio: 3/4;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true">
+                  <circle cx="14" cy="14" r="3"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(0 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(60 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(120 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(180 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(240 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(300 14 14)"/>
+                </svg>
+              </div>
+              <span class="tile-placeholder__label">Bridal Bouquet</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Bridal Bouquet</span>
+              <span class="masonry-item__cat">Florals · Bridgett Speegle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="hair">
+          <div class="masonry-item__badge">Hair &amp; Beauty</div>
+          <div class="tile-placeholder" style="aspect-ratio: 4/5;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 4 C9 4 5 8 5 13 C5 18 9 22 14 22 C19 22 23 18 23 13"/><path d="M14 4 C14 4 18 7 18 12"/><path d="M9 18 C9 18 11 24 14 24 C17 24 19 18 19 18"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Bridal Updo</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Bridal Updo</span>
+              <span class="masonry-item__cat">Hair &amp; Beauty</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="ceremony">
+          <div class="masonry-item__badge">Ceremony Décor</div>
+          <div class="tile-placeholder" style="aspect-ratio: 2/3;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3 L14 25 M8 7 C8 7 10 10 14 10 C18 10 20 7 20 7 M7 14 C7 14 10 17 14 17 C18 17 21 14 21 14"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Ceremony Arch</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Ceremony Arch</span>
+              <span class="masonry-item__cat">Ceremony Décor · Florals</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="florals">
+          <div class="masonry-item__badge">Florals</div>
+          <div class="tile-placeholder" style="aspect-ratio: 1/1;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true">
+                  <circle cx="14" cy="14" r="3"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(0 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(60 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(120 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(180 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(240 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(300 14 14)"/>
+                </svg>
+              </div>
+              <span class="tile-placeholder__label">Boutonnière</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Boutonnière</span>
+              <span class="masonry-item__cat">Florals · Bridgett Speegle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="reception">
+          <div class="masonry-item__badge">Reception Details</div>
+          <div class="tile-placeholder" style="aspect-ratio: 5/4;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="5" y="5" width="18" height="18" rx="1"/><line x1="14" y1="5" x2="14" y2="23"/><line x1="5" y1="14" x2="23" y2="14"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Table Centerpiece</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Table Centerpiece</span>
+              <span class="masonry-item__cat">Reception Details · Florals</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="hair">
+          <div class="masonry-item__badge">Hair &amp; Beauty</div>
+          <div class="tile-placeholder" style="aspect-ratio: 3/4;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 4 C9 4 5 8 5 13 C5 18 9 22 14 22 C19 22 23 18 23 13"/><path d="M10 8 Q14 12 18 8"/><path d="M8 16 Q14 20 20 16"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Loose Waves</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Loose Waves</span>
+              <span class="masonry-item__cat">Hair &amp; Beauty</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="florals">
+          <div class="masonry-item__badge">Florals</div>
+          <div class="tile-placeholder" style="aspect-ratio: 4/5;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true">
+                  <circle cx="14" cy="14" r="3"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(0 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(60 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(120 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(180 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(240 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(300 14 14)"/>
+                </svg>
+              </div>
+              <span class="tile-placeholder__label">Bridesmaid Bouquets</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Bridesmaid Bouquets</span>
+              <span class="masonry-item__cat">Florals · Bridgett Speegle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="ceremony">
+          <div class="masonry-item__badge">Ceremony Décor</div>
+          <div class="tile-placeholder" style="aspect-ratio: 3/4;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 24 L14 4 L23 24"/><path d="M8 16 L20 16"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Aisle Florals</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Aisle Florals</span>
+              <span class="masonry-item__cat">Ceremony Décor · Florals</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="reception">
+          <div class="masonry-item__badge">Reception Details</div>
+          <div class="tile-placeholder" style="aspect-ratio: 4/3;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="12" r="5"/><path d="M14 17 L14 24"/><path d="M9 24 L19 24"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Sweetheart Table</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Sweetheart Table</span>
+              <span class="masonry-item__cat">Reception Details · Florals</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="hair">
+          <div class="masonry-item__badge">Hair &amp; Beauty</div>
+          <div class="tile-placeholder" style="aspect-ratio: 1/1;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 4 C9 4 5 8 5 13 C5 18 9 22 14 22 C19 22 23 18 23 13"/><circle cx="14" cy="8" r="2"/><path d="M11 12 L17 12 M12 15 L16 15"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Half-Up Style</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Half-Up Style</span>
+              <span class="masonry-item__cat">Hair &amp; Beauty</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="florals">
+          <div class="masonry-item__badge">Florals</div>
+          <div class="tile-placeholder" style="aspect-ratio: 2/3;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true">
+                  <circle cx="14" cy="14" r="3"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(0 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(60 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(120 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(180 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(240 14 14)"/>
+                  <ellipse cx="14" cy="7" rx="2.2" ry="3.8" transform="rotate(300 14 14)"/>
+                </svg>
+              </div>
+              <span class="tile-placeholder__label">Cascade Bouquet</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Cascade Bouquet</span>
+              <span class="masonry-item__cat">Florals · Bridgett Speegle</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item visible" data-category="ceremony">
+          <div class="masonry-item__badge">Ceremony Décor</div>
+          <div class="tile-placeholder" style="aspect-ratio: 3/5;">
+            <div class="tile-placeholder__watermark"></div>
+            <div class="tile-placeholder__content">
+              <div class="tile-placeholder__icon">
+                <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3 L14 25"/><path d="M7 10 C7 10 10 13 14 13 C18 13 21 10 21 10"/><path d="M6 18 C6 18 10 21 14 21 C18 21 22 18 22 18"/></svg>
+              </div>
+              <span class="tile-placeholder__label">Floral Columns</span>
+              <span class="tile-placeholder__sub">Photo coming soon</span>
+            </div>
+          </div>
+          <div class="masonry-item__overlay" aria-hidden="true">
+            <div class="masonry-item__overlay-content">
+              <span class="masonry-item__title">Floral Columns</span>
+              <span class="masonry-item__cat">Ceremony Décor · Florals</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CTA RIBBON
+  ═══════════════════════════════════════ -->
+  <section class="cta-ribbon reveal" aria-labelledby="cta-headline">
+    <div class="cta-ribbon__watermark" aria-hidden="true">
+      <span>Beautiful</span>
+    </div>
+    <div class="cta-ribbon__content">
+      <span class="cta-ribbon__script">Love what you see?</span>
+      <h2 class="cta-ribbon__headline" id="cta-headline">
+        Let's Design Something<br>Just for You.
+      </h2>
+      <p class="cta-ribbon__text">
+        Every arrangement, every detail, every style is custom — built around your vision and the natural beauty of the Smoky Mountains. Reach out and let's start creating yours.
+      </p>
+      <div class="cta-ribbon__buttons">
+        <a href="contact.html" class="btn--primary">Book a Free Consultation</a>
+        <a href="services.html" class="btn--taupe-outline">See Our Services</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__brand-script">Vow Makers</span>
+        <span class="footer__brand-tag">Smoky Mountain Weddings</span>
+        <p class="footer__brand-text">A husband-and-wife wedding team serving the Smoky Mountain region of East Tennessee. Officiant · Music · Florals · Planning.</p>
+      </div>
+      <div>
+        <span class="footer__col-title">Navigate</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="decor.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="footer__col-title">Connect</span>
+        <ul class="footer__nav" role="list">
+          <li><a href="mailto:bridgett@vowmakers.com">Email Us</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+          <li><a href="contact.html">Book a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Vow Makers &nbsp;·&nbsp; Sevier County, Tennessee &nbsp;·&nbsp; All rights reserved</p>
+      <span class="footer__hearts" aria-hidden="true">&#9825; Made with love &#9825;</span>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════ -->
+  <script>
+    /* ─── Hamburger ─── */
+    const hamburger = document.getElementById('hamburger');
+    const navDrawer = document.getElementById('nav-drawer');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navDrawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navDrawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navDrawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ─── Category filter ─── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items      = document.querySelectorAll('.masonry-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.classList.add('visible');
+          } else {
+            item.classList.remove('visible');
+          }
+        });
+      });
+    });
+
+    /* ─── Scroll reveal ─── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
