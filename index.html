@@ -135,7 +135,9 @@
     }
 
     /* Logo */
-    .nav-logo { display: flex; flex-direction: column; line-height: 1; gap: 1px; }
+    .nav-logo { display: flex; flex-direction: row; align-items: center; gap: 0.65rem; line-height: 1; }
+    .nav-logo-img { height: 44px; width: auto; border-radius: 5px; flex-shrink: 0; }
+    .nav-logo-text { display: flex; flex-direction: column; gap: 1px; }
 
     .nav-logo-script {
       font-family: var(--script);
@@ -353,6 +355,20 @@
       8%   { opacity: 0.28; }
       88%  { opacity: 0.12; }
       100% { transform: translateY(105vh) rotate(700deg); opacity: 0; }
+    }
+
+    /* Hero logo */
+    .hero__logo-wrap {
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeIn 1s var(--ease) 0.1s forwards;
+    }
+    .hero__logo {
+      width: clamp(140px, 22vw, 240px);
+      height: auto;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 48px rgba(0, 0, 0, 0.35);
     }
 
     /* Hero content */
@@ -780,6 +796,8 @@
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
+    .footer__logo-img { width: 72px; height: auto; border-radius: 6px; margin-bottom: 1rem; display: block; }
+
     .footer__brand-script {
       font-family: var(--script);
       font-size: 2.6rem;
@@ -920,8 +938,11 @@
   ═══════════════════════════════════════ -->
   <nav class="nav" id="main-nav" aria-label="Main navigation">
     <a href="index.html" class="nav-logo" aria-label="Vow Makers home">
-      <span class="nav-logo-script">Vow Makers</span>
-      <span class="nav-logo-tagline">Smoky Mountain Weddings</span>
+      <img src="vmlogo.png" alt="" class="nav-logo-img" aria-hidden="true" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-script">Vow Makers</span>
+        <span class="nav-logo-tagline">Smoky Mountain Weddings</span>
+      </div>
     </a>
 
     <ul class="nav-links" role="list">
@@ -961,6 +982,9 @@
     <div class="hero__line" aria-hidden="true"></div>
 
     <div class="hero__content">
+      <div class="hero__logo-wrap">
+        <img src="vmlogo.png" alt="Vow Makers — Smoky Mountain Weddings" class="hero__logo" />
+      </div>
       <p class="hero__eyebrow">Sevier County, Tennessee &nbsp;·&nbsp; Where Mountains Meet Forever</p>
 
       <h1 class="hero__script">Vow Makers</h1>
@@ -1118,6 +1142,7 @@
     <div class="footer__grid">
 
       <div class="footer__brand">
+        <img src="vmlogo.png" alt="Vow Makers" class="footer__logo-img" />
         <span class="footer__brand-script">Vow Makers</span>
         <span class="footer__brand-tag">Smoky Mountain Weddings</span>
         <p class="footer__brand-text">
